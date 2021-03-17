@@ -1,0 +1,18 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+
+    &__container {
+        display: block;
+        width: 100%;
+        max-width: 1400px;
+        background-color: inherit;
+    }
+
+    &__minheight {
+        min-height: 600px;
+    }
+}
