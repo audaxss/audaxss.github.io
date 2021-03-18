@@ -42,11 +42,11 @@
     <main class="wrapper">
         <nav class="wrapper">
             <div class="navbar wrapper__container">
-    
+
                 <div class="navbar__logo">
                     <h2>Influence</h2>
                 </div>
-    
+
                 <div class="navbar__anchors">
                     <ul>
                         <li><a href="#">Women</a></li>
@@ -70,14 +70,49 @@
 
                 <div class="navbar__menu">
                     <ul>
-                        <li><a href="#"><i class="far fa-user"></i></a></li>
-                        <li><a href="#"><i class="far fa-heart"></i></a></li>
-                        <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                        <li>
+                            <a href="#" aria-haspopup="true">
+                                <i class="far fa-user"></i>
+                            </a>
+                            
+                            <ul class="dropdown dropdown--user" aria-label="submenu">
+                                <li class="dropdown__header">
+                                    <p>Welcome back, influencer!</p>
+                                </li>
+                                
+                                <div class="dropdown__anchor">
+                                    <li><a href="#">My account</a></li>
+                                    <li><a href="#">My wallet</a></li>
+                                    <li><a href="#">Logout</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <ul class="dropdown dropdown--wishlist" aria-label="submenu">
+                                <li class="dropdown__header">
+                                    <p>You have no item on your wishlist</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                            
+                            <ul class="dropdown dropdown--bag" aria-label="submenu">
+                                <li class="dropdown__header">
+                                    <p>My bag 0 item</p>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
-                
+
             </div>
         </nav>
+
+        <div class="navbar__submenu">
+            
+        </div>
     </main>
 </body>
 <!-- Script Tags -->
