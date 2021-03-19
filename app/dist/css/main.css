@@ -312,6 +312,7 @@ nav .navbar__menu ul li > .dropdown:hover {
 }
 
 nav .navbar__menu ul li .dropdown {
+  z-index: 9999;
   height: auto;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
