@@ -11,9 +11,27 @@
         width: 100%;
         max-width: 1400px;
         background-color: inherit;
+
     }
 
     &__minheight {
         min-height: 600px;
+    }
+}
+
+.overlay {
+    display: none;
+    z-index: 9998;
+    position: fixed;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+
+    img {
+        width: 100%;
+        height: auto;
     }
 }

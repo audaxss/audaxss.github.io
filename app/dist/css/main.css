@@ -30,6 +30,7 @@ p {
 
 nav {
   position: fixed;
+  z-index: 9999;
   background-color: #000 !important;
   width: 100%;
 }
@@ -52,8 +53,8 @@ nav .navbar {
   nav .navbar {
     -webkit-column-gap: 20px;
             column-gap: 20px;
-    -ms-grid-columns: 0.5fr 4fr 1fr;
-        grid-template-columns: 0.5fr 4fr 1fr;
+    -ms-grid-columns: 1fr 4fr 1fr;
+        grid-template-columns: 1fr 4fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     padding: 10px 3%;
@@ -64,8 +65,8 @@ nav .navbar {
   nav .navbar {
     -webkit-column-gap: 20px;
             column-gap: 20px;
-    -ms-grid-columns: 0.5fr 4fr 1fr;
-        grid-template-columns: 0.5fr 4fr 1fr;
+    -ms-grid-columns: 1fr 4fr 1fr;
+        grid-template-columns: 1fr 4fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     padding: 10px 3%;
@@ -74,8 +75,8 @@ nav .navbar {
 
 @media screen and (min-width: 1190px) {
   nav .navbar {
-    -ms-grid-columns: 0.5fr 4fr 2fr 1fr;
-        grid-template-columns: 0.5fr 4fr 2fr 1fr;
+    -ms-grid-columns: 1fr 4fr 2fr 1fr;
+        grid-template-columns: 1fr 4fr 2fr 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     -webkit-column-gap: 5px;
@@ -84,6 +85,31 @@ nav .navbar {
     padding: 0 2%;
     height: 48px;
   }
+}
+
+nav .navbar__mobileSearch {
+  display: block;
+}
+
+@media screen and (min-width: 790px) {
+  nav .navbar__mobileSearch {
+    display: none !important;
+  }
+}
+
+nav .navbar__mobileSearch .search-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px;
+}
+
+nav .navbar__mobileSearch .search-button i {
+  font-size: 18px;
+  color: #FFF;
 }
 
 nav .navbar__logo {
@@ -96,6 +122,10 @@ nav .navbar__logo {
   nav .navbar__logo {
     margin-right: 0;
   }
+}
+
+nav .navbar__logo img {
+  width: 150px !important;
 }
 
 nav .navbar__logo h2 {
@@ -585,6 +615,24 @@ nav .navbar__menu ul li a i {
   gap: 10px;
 }
 
+@media screen and (min-width: 790px) {
+  .submenu__col {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .submenu__col {
+    width: 230px;
+  }
+}
+
+@media screen and (min-width: 1190px) {
+  .submenu__col {
+    width: 100%;
+  }
+}
+
 .submenu__col a::after {
   display: none !important;
 }
@@ -619,7 +667,7 @@ nav .navbar__menu ul li a i {
 }
 
 .submenu__col--img-1 {
-  min-height: 100%;
+  min-height: 320px;
 }
 
 .submenu__col__images {
@@ -751,6 +799,78 @@ nav .navbar__menu ul li a i {
   }
 }
 
+.bottom__navbar {
+  padding: 10px 0;
+  width: 100%;
+  background-color: #FFF !important;
+  display: none !important;
+}
+
+@media screen and (min-width: 790px) {
+  .bottom__navbar {
+    display: block !important;
+  }
+}
+
+.bottom__container {
+  width: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 2%;
+}
+
+.bottom__container ul li {
+  display: inline-block;
+}
+
+.bottom__container ul li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.bottom__container ul li .covid {
+  color: blue !important;
+}
+
+.bottom__container ul li .covid span::after {
+  background-color: blue !important;
+}
+
+.bottom__container ul li a {
+  position: relative;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.bottom__container ul li a i {
+  font-size: 16px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.bottom__container ul li a span::after {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  width: calc(100% - 30px);
+  height: 1px;
+  background-color: #000;
+}
+
 .wrapper {
   width: 100%;
   height: auto;
@@ -776,6 +896,20 @@ nav .navbar__menu ul li a i {
 
 .wrapper__minheight {
   min-height: 600px;
+}
+
+.overlay {
+  display: none;
+  z-index: 9998;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+}
+
+header img {
+  width: 100%;
+  height: auto;
 }
 
 input {

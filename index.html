@@ -39,188 +39,285 @@
 </head>
 
 <body>
-    <main class="wrapper">
-        <nav class="wrapper">
-            <div class="navbar wrapper__container">
+    <div id="overlay" class="overlay"></div>
 
-                <div class="navbar__logo">
-                    <h2>Influence</h2>
-                </div>
+    <nav class="wrapper" id="top__navbar">
+        <div class="navbar wrapper__container">
 
-                <div class="navbar__anchors">
-                    <ul>
-                        <li class="navbar__anchors--active"><a href="#">Women</a></li>
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">Luxury</a></li>
-                        <li><a href="#">Kids</a></li>
-                        <li><a href="#">Essentials</a></li>
-                        <li><a href="#">Beauty</a></li>
-                        <li><a href="#">Home & Lifestyle</a></li>
-                    </ul>
-                </div>
-
-                <div class="navbar__search">
-                    <form action="#">
-                        <div class="navbar__search__input">
-                            <input type="text" name="search" placeholder="38% Off on Birkenstock, Vans, Timberland">
-                            <button type="submit"><i class="fas fa-search"></i></button>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="navbar__menu">
-                    <ul>
-                        <li>
-                            <a href="#" aria-haspopup="true">
-                                <i class="far fa-user"></i>
-                            </a>
-
-                            <ul class="dropdown dropdown--user" aria-label="submenu">
-                                <li class="dropdown__header">
-                                    <p>Welcome back, influencer!</p>
-                                </li>
-
-                                <div class="dropdown__anchor">
-                                    <li><a href="#">My account</a></li>
-                                    <li><a href="#">My wallet</a></li>
-                                    <li><a href="#">Logout</a></li>
-                                </div>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><i class="far fa-heart"></i></a>
-                            <ul class="dropdown dropdown--wishlist" aria-label="submenu">
-                                <li class="dropdown__header">
-                                    <p>You have no item on your wishlist</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
-
-                            <ul class="dropdown dropdown--bag" aria-label="submenu">
-                                <li class="dropdown__header">
-                                    <p>My bag 0 item</p>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
+            <div class="navbar__logo">
+                <a href="#" aria-label="Influence Logo" title="Influence">
+                    <img src="app/dist/assets/logo-transparent.png" alt="Influence Logo transparent">
+                </a>
             </div>
-<!-- get height of div to adjust the submenu category div -->
-            <div class="submenu__container wrapper" id="submenu">
-                <div class="submenu wrapper__container">
-                    <ul>
-                        <div class="submenu__anchors">
-                            <li>
-                                <a href="#">New in</a>
 
-                                <div class="submenu__category wrapper" id="submenu__category">
-                                    <div class="submenu__dropdown wrapper__container">
-                                        <div class="submenu__grid">
-                    
-                                            <div class="submenu__col">
-                                                <ul>
-                                                    <li class="list__header"><a href="#">New in</a></li>
-                                                    <li><hr></li>
-                                                    <li><a href="#">Link 1</a></li>
-                                                    <li><a href="#">Link 2</a></li>
-                                                    <li><a href="#">Link 3</a></li>
-                                                    <li><a href="#">Link 4</a></li>
-                                                </ul>
-                                            </div>
+            <div class="navbar__anchors">
+                <ul>
+                    <li class="navbar__anchors--active"><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Luxury</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Essentials</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Home & Lifestyle</a></li>
+                </ul>
+            </div>
 
-                                            <div class="submenu__col">
-                                                <ul>
-                                                    <li class="list__header"><a href="#">New Brands</a></li>
-                                                    <li><hr></li>
-                                                    <li><a href="#">Link 1</a></li>
-                                                    <li><a href="#">Link 2</a></li>
-                                                    <li><a href="#">Link 3</a></li>
-                                                    <li><a href="#">Link 4</a></li>
-                                                    <li><a href="#">Link 5</a></li>
-                                                    <li><a href="#">Link 6</a></li>
-                                                    <li><a href="#">Link 7</a></li>
-                                                </ul>
-                                            </div>
+            <div class="navbar__search" title="Search bar">
+                <form action="#">
+                    <div class="navbar__search__input">
+                        <input type="text" name="search" placeholder="38% Off on Birkenstock, Vans, Timberland">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
 
-                                            <div class="submenu__col">
-                                                <ul>
-                                                    <li class="list__header"><a href="#">New Brands</a></li>
-                                                    <li><hr></li>
-                                                    <li><a href="#">Link 1</a></li>
-                                                    <li><a href="#">Link 2</a></li>
-                                                    <li><a href="#">Link 3</a></li>
-                                                    <li><a href="#">Link 4</a></li>
-                                                    <li><a href="#">Link 5</a></li>
-                                                    <li><a href="#">Link 6</a></li>
-                                                    <li><a href="#">Link 7</a></li>
-                                                </ul>
-                                            </div>
+            <div class="navbar__menu">
+                <ul>
+                    <li>
+                        <a href="#" aria-haspopup="true" title="User Menu">
+                            <i class="far fa-user"></i>
+                        </a>
 
-                                            
+                        <ul class="dropdown dropdown--user" aria-label="submenu">
+                            <li class="dropdown__header">
+                                <p>Welcome back, influencer!</p>
+                            </li>
 
-                                            <div class="submenu__col">
-                                                <ul>
-                                                    <li class="list__header"><a href="#">Shop by brands</a></li>
-                                                    <li><hr></li>
-                                                </ul>
+                            <div class="dropdown__anchor">
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">My wallet</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="Wishlist"><i class="far fa-heart"></i></a>
+                        <ul class="dropdown dropdown--wishlist" aria-label="submenu">
+                            <li class="dropdown__header">
+                                <p>You have no item on your wishlist</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="Bag"><i class="fas fa-shopping-bag"></i></a>
 
-                                                <div class="submenu__col__images">
-                                                    <div class="submenu__col--img-3">
-                                                        <a href="#">
-                                                            <img src="https://pbs.twimg.com/media/EakayddXgAAT73e.jpg" alt="">
-                                                        </a>
-                                                        <a href="#">
-                                                            <img src="https://lh3.googleusercontent.com/Nyr89kJYEkP7xa_5BdAa596f-2yJ6OA-pW1nTEnC-9H81S8qs_fjiSIh_r3BvCUaNgCofKRCui957h6QsMKvILoKBFUSgQnfU-c=w1200-h630-rj-pp-e365" alt="">
-                                                        </a>
-                                                        <a href="#">
-                                                            <img src="https://pbs.twimg.com/media/ESKteYFXsAAgNSH.jpg:large" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="submenu__col--img-1">
-                                                        <a href="#">
-                                                            <img src="https://data.whicdn.com/images/329003751/original.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="submenu__col--img">
-                                                        <a href="#">
-                                                            <img src="https://pbs.twimg.com/media/ESKtfDUXkAACUvV.jpg" alt="">
-                                                        </a>
-                                                        <a href="#">
-                                                            <img src="https://affairpost.com/wp-content/uploads/2020/02/740full-shin-ryujin.jpg" alt="">
-                                                        </a>
-                                                    </div>
+                        <ul class="dropdown dropdown--bag" aria-label="submenu">
+                            <li class="dropdown__header">
+                                <p>My bag 0 item</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar__mobileSearch">
+                <div class="search-button">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="submenu__container wrapper" id="submenu">
+            <div class="submenu wrapper__container">
+                <ul>
+                    <div class="submenu__anchors" id="submenu__anchors">
+                        <li>
+                            <a href="#">New in</a>
+
+                            <div class="submenu__category wrapper" id="submenu__category">
+                                <div class="submenu__dropdown wrapper__container">
+                                    <div class="submenu__grid">
+                
+                                        <div class="submenu__col">
+                                            <ul>
+                                                <li class="list__header"><a href="#">New in</a></li>
+                                                <li><hr></li>
+                                                <li><a href="#">Link 1</a></li>
+                                                <li><a href="#">Link 2</a></li>
+                                                <li><a href="#">Link 3</a></li>
+                                                <li><a href="#">Link 4</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="submenu__col">
+                                            <ul>
+                                                <li class="list__header"><a href="#">New Brands</a></li>
+                                                <li><hr></li>
+                                                <li><a href="#">Link 1</a></li>
+                                                <li><a href="#">Link 2</a></li>
+                                                <li><a href="#">Link 3</a></li>
+                                                <li><a href="#">Link 4</a></li>
+                                                <li><a href="#">Link 5</a></li>
+                                                <li><a href="#">Link 6</a></li>
+                                                <li><a href="#">Link 7</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="submenu__col">
+                                            <ul>
+                                                <li class="list__header"><a href="#">New Brands</a></li>
+                                                <li><hr></li>
+                                                <li><a href="#">Link 1</a></li>
+                                                <li><a href="#">Link 2</a></li>
+                                                <li><a href="#">Link 3</a></li>
+                                                <li><a href="#">Link 4</a></li>
+                                                <li><a href="#">Link 5</a></li>
+                                                <li><a href="#">Link 6</a></li>
+                                                <li><a href="#">Link 7</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="submenu__col">
+                                            <ul>
+                                                <li class="list__header"><a href="#">Shop by brands</a></li>
+                                                <li><hr></li>
+                                            </ul>
+
+                                            <div class="submenu__col__images">
+                                                <div class="submenu__col--img-3">
+                                                    <a href="#">
+                                                        <img src="https://pbs.twimg.com/media/EakayddXgAAT73e.jpg" alt="">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://lh3.googleusercontent.com/Nyr89kJYEkP7xa_5BdAa596f-2yJ6OA-pW1nTEnC-9H81S8qs_fjiSIh_r3BvCUaNgCofKRCui957h6QsMKvILoKBFUSgQnfU-c=w1200-h630-rj-pp-e365" alt="">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://pbs.twimg.com/media/ESKteYFXsAAgNSH.jpg:large" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="submenu__col--img-1">
+                                                    <a href="#">
+                                                        <img src="https://data.whicdn.com/images/329003751/original.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="submenu__col--img">
+                                                    <a href="#">
+                                                        <img src="https://pbs.twimg.com/media/ESKtfDUXkAACUvV.jpg" alt="">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://affairpost.com/wp-content/uploads/2020/02/740full-shin-ryujin.jpg" alt="">
+                                                    </a>
                                                 </div>
                                             </div>
-                    
                                         </div>
+                
                                     </div>
                                 </div>
-                            </li>
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">Shoes</a></li>
-                            <li><a href="#">Underwear</a></li>
-                            <li><a href="#">Clothes</a></li>
-                            <li><a href="#">Bag</a></li>
-                            <li><a href="#">Sports</a></li>
-                            <li><a href="#">Beauty</a></li>
-                            <li><a href="#">K-Fashion</a></li>
-                            <li><a href="#">Premium</a></li>
-                            <li><a href="#">Brand</a></li>
-                        </div>
-    
-                        <div class="submenu__sale">
-                            <li><a href="#">Sale</a></li>
-                        </div>
-                    </ul>
-                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Accessories</a>
+                            <div class="submenu__category wrapper" id="submenu__category">
+                                <div class="submenu__dropdown wrapper__container">
+                                    <div class="submenu__grid">
+                
+                                        <div class="submenu__col">
+                                            <ul>
+                                                <li class="list__header"><a href="#">Accessories</a></li>
+                                                <li><hr></li>
+                                                <li><a href="#">Link 1</a></li>
+                                                <li><a href="#">Link 2</a></li>
+                                                <li><a href="#">Link 3</a></li>
+                                                <li><a href="#">Link 4</a></li>
+                                            </ul>
+                                        </div>  
+
+                                        <div class="submenu__col">
+                                            <ul>
+                                                <li class="list__header"><a href="#">Shop by brands</a></li>
+                                                <li><hr></li>
+                                            </ul>
+
+                                            <div class="submenu__col__images">
+                                                <div class="submenu__col--img">
+                                                    <a href="#">
+                                                        <img src="https://pbs.twimg.com/media/EakayddXgAAT73e.jpg" alt="">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://lh3.googleusercontent.com/Nyr89kJYEkP7xa_5BdAa596f-2yJ6OA-pW1nTEnC-9H81S8qs_fjiSIh_r3BvCUaNgCofKRCui957h6QsMKvILoKBFUSgQnfU-c=w1200-h630-rj-pp-e365" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="submenu__col--img-1">
+                                                    <a href="#">
+                                                        <img src="https://data.whicdn.com/images/329003751/original.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="submenu__col--img">
+                                                    <a href="#">
+                                                        <img src="https://pbs.twimg.com/media/ESKtfDUXkAACUvV.jpg" alt="">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="https://affairpost.com/wp-content/uploads/2020/02/740full-shin-ryujin.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Underwear</a></li>
+                        <li><a href="#">Clothes</a></li>
+                        <li><a href="#">Bag</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Beauty</a></li>
+                        <li><a href="#">K-Fashion</a></li>
+                        <li><a href="#">Premium</a></li>
+                        <li><a href="#">Brand</a></li>
+                    </div>
+
+                    <div class="submenu__sale" id="submenu__sale">
+                        <li><a href="#">Sale</a></li>
+                    </div>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+    
+    <main class="wrapper">
+        <div id="marginTop"></div>
 
+        <div class="bottom__navbar wrapper">
+            <div class="bottom__container wrapper__container">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span>INow: unlimited free shipping</span>
+                        </a>
+                    </li>
 
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-history"></i>
+                            <span>Days free return</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-truck"></i>
+                            <span>Free shipping available</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="covid">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <span>covid-19 donation</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <header class="wrapper__container">
+            <img src="https://static-ph.zacdn.com/cms/dy/FULLWIDTH_DESKTOP_Hero_ZBIRTHDAY2021.jpg" alt="">
+        </header>
     </main>
+    
 </body>
 <!-- Script Tags -->
 <script src="app/dist/script/navbar.js"></script>
