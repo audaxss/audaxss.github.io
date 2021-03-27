@@ -28,6 +28,10 @@ p {
   font-size: 17px;
 }
 
+.menuBottom {
+  display: none;
+}
+
 nav {
   position: fixed;
   z-index: 9999;
@@ -828,6 +832,12 @@ nav .navbar__menu ul li a i {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 5px 2%;
+}
+
+.bottom__container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .bottom__container ul li {

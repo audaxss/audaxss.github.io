@@ -30,3 +30,25 @@ submenuAnchors.forEach(anchor => {
 submenuSale.forEach(anchor => {
     backgroundOverlay(anchor);
 });
+
+const searchBarContainer = document.querySelector('#searchBarContainer');
+const searchButton = document.querySelector('#searchButton');
+const navbarLogo = document.querySelector('#navbarLogo');
+const searchBar = document.querySelector('#searchBar');
+const searchCancel = document.querySelector('#searchCancel');
+
+searchButton.addEventListener('click', () => {
+    navbarLogo.style.display = 'none';
+    searchButton.style.display = 'none';
+
+    searchBar.classList.add('search-input--open');
+    searchBarContainer.classList.add('navbar__mobileSearch--open');
+})
+
+searchCancel.addEventListener('click', ()=>{
+    navbarLogo.style.display = 'block';
+    searchButton.style.display = 'flex';
+
+    searchBar.classList.remove('search-input--open');
+    searchBarContainer.classList.remove('navbar__mobileSearch--open');
+})
