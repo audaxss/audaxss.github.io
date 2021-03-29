@@ -31,7 +31,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="app/build/style/main.min.css">
-    <link rel="stylesheet" type="text/css" href="app/build/style/mobile-main.min.css" media="screen and (max-width: 789px)">
+    <link rel="stylesheet" type="text/css" href="app/build/style/mobile-main.min.css"
+        media="screen and (max-width: 789px)">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" defer
         crossorigin="anonymous">
@@ -40,17 +41,22 @@
 </head>
 
 <body>
+    <!-- Overlay Hover for Category -->
     <div id="overlay" class="overlay"></div>
+    <!-- Overlay Hover for Category -->
 
+    <!-- Navigation Bar -->
     <nav class="wrapper" id="top__navbar">
         <div class="navbar wrapper__container">
 
+            <!-- Navbar Logo -->
             <div class="navbar__logo" id="navbarLogo">
                 <a href="#" aria-label="Influence Logo" title="Influence">
                     <img src="app/dist/assets/logo-transparent.png" alt="Influence Logo transparent">
                 </a>
             </div>
 
+            <!-- Navbar anchors/links -->
             <div class="navbar__anchors">
                 <ul>
                     <li class="navbar__anchors--active"><a href="#">Women</a></li>
@@ -63,6 +69,7 @@
                 </ul>
             </div>
 
+            <!-- Desktop Search bar -->
             <div class="navbar__search" title="Search bar">
                 <form action="#">
                     <div class="navbar__search__input">
@@ -72,6 +79,7 @@
                 </form>
             </div>
 
+            <!-- Navbar Menu -->
             <div class="navbar__menu">
                 <ul>
                     <li>
@@ -111,11 +119,14 @@
                 </ul>
             </div>
 
+            <!-- Mobile Search bar -->
             <div class="navbar__mobileSearch" id="searchBarContainer">
+                <!-- Search Button -->
                 <div class="search-button" id="searchButton">
                     <i class="fas fa-search"></i>
                 </div>
 
+                <!-- Search Input  -->
                 <div class="search-input" id="searchBar">
                     <form action="#">
                         <div class="navbar__search__input navbar__search__input--mobile">
@@ -129,8 +140,10 @@
                     </div>
                 </div>
             </div>
+            <!-- Mobile Search bar -->
         </div>
 
+        <!-- Submenu Category Desktop -->
         <div class="submenu__container wrapper" id="submenu">
             <div class="submenu wrapper__container">
                 <ul>
@@ -141,11 +154,13 @@
                             <div class="submenu__category wrapper" id="submenu__category">
                                 <div class="submenu__dropdown wrapper__container">
                                     <div class="submenu__grid">
-                
+
                                         <div class="submenu__col">
                                             <ul>
                                                 <li class="list__header"><a href="#">New in</a></li>
-                                                <li><hr></li>
+                                                <li>
+                                                    <hr>
+                                                </li>
                                                 <li><a href="#">Link 1</a></li>
                                                 <li><a href="#">Link 2</a></li>
                                                 <li><a href="#">Link 3</a></li>
@@ -156,7 +171,9 @@
                                         <div class="submenu__col">
                                             <ul>
                                                 <li class="list__header"><a href="#">New Brands</a></li>
-                                                <li><hr></li>
+                                                <li>
+                                                    <hr>
+                                                </li>
                                                 <li><a href="#">Link 1</a></li>
                                                 <li><a href="#">Link 2</a></li>
                                                 <li><a href="#">Link 3</a></li>
@@ -170,7 +187,9 @@
                                         <div class="submenu__col">
                                             <ul>
                                                 <li class="list__header"><a href="#">New Brands</a></li>
-                                                <li><hr></li>
+                                                <li>
+                                                    <hr>
+                                                </li>
                                                 <li><a href="#">Link 1</a></li>
                                                 <li><a href="#">Link 2</a></li>
                                                 <li><a href="#">Link 3</a></li>
@@ -184,37 +203,45 @@
                                         <div class="submenu__col">
                                             <ul>
                                                 <li class="list__header"><a href="#">Shop by brands</a></li>
-                                                <li><hr></li>
+                                                <li>
+                                                    <hr>
+                                                </li>
                                             </ul>
 
                                             <div class="submenu__col__images">
                                                 <div class="submenu__col--img-3">
                                                     <a href="#">
-                                                        <img src="https://pbs.twimg.com/media/EakayddXgAAT73e.jpg" alt="">
+                                                        <img src="https://pbs.twimg.com/media/EakayddXgAAT73e.jpg"
+                                                            alt="">
                                                     </a>
                                                     <a href="#">
-                                                        <img src="https://lh3.googleusercontent.com/Nyr89kJYEkP7xa_5BdAa596f-2yJ6OA-pW1nTEnC-9H81S8qs_fjiSIh_r3BvCUaNgCofKRCui957h6QsMKvILoKBFUSgQnfU-c=w1200-h630-rj-pp-e365" alt="">
+                                                        <img src="https://lh3.googleusercontent.com/Nyr89kJYEkP7xa_5BdAa596f-2yJ6OA-pW1nTEnC-9H81S8qs_fjiSIh_r3BvCUaNgCofKRCui957h6QsMKvILoKBFUSgQnfU-c=w1200-h630-rj-pp-e365"
+                                                            alt="">
                                                     </a>
                                                     <a href="#">
-                                                        <img src="https://pbs.twimg.com/media/ESKteYFXsAAgNSH.jpg:large" alt="">
+                                                        <img src="https://pbs.twimg.com/media/ESKteYFXsAAgNSH.jpg:large"
+                                                            alt="">
                                                     </a>
                                                 </div>
                                                 <div class="submenu__col--img-1">
                                                     <a href="#">
-                                                        <img src="https://data.whicdn.com/images/329003751/original.png" alt="">
+                                                        <img src="https://data.whicdn.com/images/329003751/original.png"
+                                                            alt="">
                                                     </a>
                                                 </div>
                                                 <div class="submenu__col--img">
                                                     <a href="#">
-                                                        <img src="https://pbs.twimg.com/media/ESKtfDUXkAACUvV.jpg" alt="">
+                                                        <img src="https://pbs.twimg.com/media/ESKtfDUXkAACUvV.jpg"
+                                                            alt="">
                                                     </a>
                                                     <a href="#">
-                                                        <img src="https://affairpost.com/wp-content/uploads/2020/02/740full-shin-ryujin.jpg" alt="">
+                                                        <img src="https://affairpost.com/wp-content/uploads/2020/02/740full-shin-ryujin.jpg"
+                                                            alt="">
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                
+
                                     </div>
                                 </div>
                             </div>
@@ -224,49 +251,58 @@
                             <div class="submenu__category wrapper" id="submenu__category">
                                 <div class="submenu__dropdown wrapper__container">
                                     <div class="submenu__grid">
-                
+
                                         <div class="submenu__col">
                                             <ul>
                                                 <li class="list__header"><a href="#">Accessories</a></li>
-                                                <li><hr></li>
+                                                <li>
+                                                    <hr>
+                                                </li>
                                                 <li><a href="#">Link 1</a></li>
                                                 <li><a href="#">Link 2</a></li>
                                                 <li><a href="#">Link 3</a></li>
                                                 <li><a href="#">Link 4</a></li>
                                             </ul>
-                                        </div>  
+                                        </div>
 
                                         <div class="submenu__col">
                                             <ul>
                                                 <li class="list__header"><a href="#">Shop by brands</a></li>
-                                                <li><hr></li>
+                                                <li>
+                                                    <hr>
+                                                </li>
                                             </ul>
 
                                             <div class="submenu__col__images">
                                                 <div class="submenu__col--img">
                                                     <a href="#">
-                                                        <img src="https://pbs.twimg.com/media/EakayddXgAAT73e.jpg" alt="">
+                                                        <img src="https://pbs.twimg.com/media/EakayddXgAAT73e.jpg"
+                                                            alt="">
                                                     </a>
                                                     <a href="#">
-                                                        <img src="https://lh3.googleusercontent.com/Nyr89kJYEkP7xa_5BdAa596f-2yJ6OA-pW1nTEnC-9H81S8qs_fjiSIh_r3BvCUaNgCofKRCui957h6QsMKvILoKBFUSgQnfU-c=w1200-h630-rj-pp-e365" alt="">
+                                                        <img src="https://lh3.googleusercontent.com/Nyr89kJYEkP7xa_5BdAa596f-2yJ6OA-pW1nTEnC-9H81S8qs_fjiSIh_r3BvCUaNgCofKRCui957h6QsMKvILoKBFUSgQnfU-c=w1200-h630-rj-pp-e365"
+                                                            alt="">
                                                     </a>
                                                 </div>
                                                 <div class="submenu__col--img-1">
                                                     <a href="#">
-                                                        <img src="https://data.whicdn.com/images/329003751/original.png" alt="">
+                                                        <img src="https://data.whicdn.com/images/329003751/original.png"
+                                                            alt="">
                                                     </a>
                                                 </div>
                                                 <div class="submenu__col--img">
                                                     <a href="#">
-                                                        <img src="https://pbs.twimg.com/media/ESKtfDUXkAACUvV.jpg" alt="">
+                                                        <img src="https://pbs.twimg.com/media/ESKtfDUXkAACUvV.jpg"
+                                                            alt="">
                                                     </a>
                                                     <a href="#">
-                                                        <img src="https://affairpost.com/wp-content/uploads/2020/02/740full-shin-ryujin.jpg" alt="">
+                                                        <img src="https://affairpost.com/wp-content/uploads/2020/02/740full-shin-ryujin.jpg"
+                                                            alt="">
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                
+
                                     </div>
                                 </div>
                             </div>
@@ -288,11 +324,29 @@
                 </ul>
             </div>
         </div>
+        <!-- Submenu Category Desktop -->
     </nav>
-    
-    <main class="wrapper">
+
+    <main class="wrapper" id="app">
+
         <div id="marginTop"></div>
 
+        <template v-if="isHomeClicked == true || isCategoryClicked == true">
+            <!-- Navbar Mobile -->
+            <div class="mobileAnchors__container">
+                <ul id="navbarAnchors">
+                    <li class="active"><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Luxury</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Essentials</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Home & Lifestyle</a></li>
+                </ul>
+            </div>
+        </template>
+
+        <!-- Bottom Menu Desktop -->
         <div class="bottom__navbar wrapper__container">
             <div class="bottom__container">
                 <ul>
@@ -326,39 +380,107 @@
                 </ul>
             </div>
         </div>
+        <!-- Bottom Menu Desktop -->
 
-        <!-- <header class="wrapper__container">
+        <template v-if="isCategoryClicked == true">
+            <h2>Category</h2>
+        </template>
+
+        <template v-else-if="isBagClicked == true">
+            <h2>Bag</h2>
+        </template>
+
+        <template v-else-if="isWishlistClicked == true">
+            <h2>Wishlist</h2>
+        </template>
+
+        <template v-else-if="isUserSettingsClicked == true">
+            <h2>User</h2>
+        </template>
+
+        <template v-else>
+            <header class="wrapper__container">
             <img src="https://static-ph.zacdn.com/cms/dy/FULLWIDTH_DESKTOP_Hero_ZBIRTHDAY2021.jpg" alt="">
-        </header> -->
+        </header>
+        </template>        
+
+        <!-- Mobile Bottom Navigation -->
+        <div class="menuBottom">
+            <a class="menuBottom__col" href="index.html" aria-label="Home button" role="button" @click="navbarAnchorView('isHomeClicked')">
+                <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjAgNy4wOTN2LTUuMDkzaC0zdjIuMDkzbDMgM3ptNCA1LjkwN2wtMTItMTItMTIgMTJoM3YxMGg3di01aDR2NWg3di0xMGgzem0tNSA4aC0zdi01aC04djVoLTN2LTEwLjI2bDctNi45MTIgNyA2Ljk5djEwLjE4MnoiLz48L3N2Zz4=">
+                <span>Home</span>
+            </a>
+
+            <a class="menuBottom__col" aria-label="Category button" role="button" @click="navbarAnchorView('isCategoryClicked')">
+                <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNCAyMmgtNHYtNGg0djR6bTAtMTJoLTR2NGg0di00em0wLThoLTR2NGg0di00em0zIDB2NGgxN3YtNGgtMTd6bTAgMTJoMTd2LTRoLTE3djR6bTAgOGgxN3YtNGgtMTd2NHoiLz48L3N2Zz4=">
+                <span>Category</span>
+            </a>
+
+            <a class="menuBottom__col" aria-label="Cart button" role="button" @click="navbarAnchorView('isBagClicked')">
+                <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNi42NjUgOS4wNjhsLTMuNjY1LTEuNjZ2MTRsMy42NjUgMi41OTIgMTQuMzM1LTIuMTU1di0xNC44NDVsLTE0LjMzNSAyLjA2OHptLTEuNjY1IDEuNDQxbDEgLjQ1M3YxMC4xMThsLTEtLjcwN3YtOS44NjR6bTE0IDkuNjE1bC0xMSAxLjY1M3YtMTAuODgxbDExLTEuNTg3djEwLjgxNXptLTItMTUuODMzbC0uMDAxIDEuNzQ5YzAgLjI0Ni0uMTguNDU1LS40MjMuNDkyLS4zMDMuMDQ1LS41NzYtLjE5LS41NzYtLjQ5NXYtMS43NDZjLjAwMS0uNjkxLS4yMzEtMS4zMDQtLjY1My0xLjcyNi0uMzY4LS4zNy0uODQ3LS41NjUtMS4zODQtLjU2NS0xLjU0NyAwLTIuOTYgMS41NTgtMi45NjMgMy4yNjh2MS42ODFjMCAuMjQ3LS4xODEuNDU3LS40MjUuNDk0LS4zMDIuMDQ2LS41NzUtLjE4OS0uNTc1LS40OTRsLjAwMS0xLjY4M2MuMDA0LTIuMjYxIDEuODY2LTQuMjY2IDMuOTYyLTQuMjY2IDEuNzE3IDAgMy4wMzkgMS4zODcgMy4wMzcgMy4yOTF6bS05Ljk5OSAyLjIwOXYtMi4yMzVjLjAwNC0yLjI2IDEuODY2LTQuMjY1IDMuOTYyLTQuMjY1LjQ5MiAwIC45NDQuMTI1IDEuMzUuMzMyLS40MjMuMTctLjgyMi40LTEuMTg4LjY4M2wtLjE2Mi0uMDE1Yy0xLjU0NyAwLTIuOTYxIDEuNTU4LTIuOTYzIDMuMjY4djIuMjMyYzAgLjI0OC0uMTgyLjQ1OC0uNDI3LjQ5NC0uMy4wNDUtLjU3Mi0uMTg3LS41NzItLjQ5NHoiLz48L3N2Zz4=">
+                <span>Cart</span>
+            </a>
+
+            <a class="menuBottom__col" aria-label="Wishlist button" role="button" @click="navbarAnchorView('isWishlistClicked')">
+                <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNi4yOCAzYzMuMjM2LjAwMSA0Ljk3MyAzLjQ5MSA1LjcyIDUuMDMxLjc1LTEuNTQ3IDIuNDY5LTUuMDIxIDUuNzI2LTUuMDIxIDIuMDU4IDAgNC4yNzQgMS4zMDkgNC4yNzQgNC4xODIgMCAzLjQ0Mi00Ljc0NCA3Ljg1MS0xMCAxMy01LjI1OC01LjE1MS0xMC05LjU1OS0xMC0xMyAwLTIuNjc2IDEuOTY1LTQuMTkzIDQuMjgtNC4xOTJ6bS4wMDEtMmMtMy4xODMgMC02LjI4MSAyLjE4Ny02LjI4MSA2LjE5MiAwIDQuNjYxIDUuNTcgOS40MjcgMTIgMTUuODA4IDYuNDMtNi4zODEgMTItMTEuMTQ3IDEyLTE1LjgwOCAwLTQuMDExLTMuMDk3LTYuMTgyLTYuMjc0LTYuMTgyLTIuMjA0IDAtNC40NDYgMS4wNDItNS43MjYgMy4yMzgtMS4yODUtMi4yMDYtMy41MjItMy4yNDgtNS43MTktMy4yNDh6Ii8+PC9zdmc+">
+                <span>Wishlist</span>
+            </a>
+
+            <a class="menuBottom__col" aria-label="Account Button" role="button" @click="navbarAnchorView('isUserSettingsClicked')">
+                <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMmMzLjAzMiAwIDUuNSAyLjQ2NyA1LjUgNS41IDAgMS40NTgtLjQ4MyAzLjE5Ni0zLjI0OCA1LjU5IDQuMTExIDEuOTYxIDYuNjAyIDUuMjUzIDcuNDgyIDguOTA5aC0xOS40ODZjLjk1NS00LjE4OCA0LjAwNS03LjM5OSA3LjUxOS04Ljg4OS0xLjYwMS0xLjI4Ny0zLjI2Ny0zLjMyMy0zLjI2Ny01LjYxIDAtMy4wMzMgMi40NjgtNS41IDUuNS01LjV6bTAtMmMtNC4xNDIgMC03LjUgMy4zNTctNy41IDcuNSAwIDIuMDEyLjc5NyAzLjgzNCAyLjA4NiA1LjE4Mi01LjAzIDMuMDA5LTYuNTg2IDguNTAxLTYuNTg2IDExLjMxOGgyNGMwLTIuNzkxLTEuNjU3LTguMjgtNi41OS0xMS4zMTQgMS4yOTItMS4zNDggMi4wOS0zLjE3MiAyLjA5LTUuMTg2IDAtNC4xNDMtMy4zNTgtNy41LTcuNS03LjV6Ii8+PC9zdmc+">
+                <span>Account</span>
+            </a>
+        </div>
     </main>
-    
-    <div class="menuBottom">
-        <a class="menuBottom__col" aria-label="Home button" role="button">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjAgNy4wOTN2LTUuMDkzaC0zdjIuMDkzbDMgM3ptNCA1LjkwN2wtMTItMTItMTIgMTJoM3YxMGg3di01aDR2NWg3di0xMGgzem0tNSA4aC0zdi01aC04djVoLTN2LTEwLjI2bDctNi45MTIgNyA2Ljk5djEwLjE4MnoiLz48L3N2Zz4=">
-            <span>Home</span>
-        </a>
 
-        <a class="menuBottom__col" aria-label="Category button" role="button">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNCAyMmgtNHYtNGg0djR6bTAtMTJoLTR2NGg0di00em0wLThoLTR2NGg0di00em0zIDB2NGgxN3YtNGgtMTd6bTAgMTJoMTd2LTRoLTE3djR6bTAgOGgxN3YtNGgtMTd2NHoiLz48L3N2Zz4=">
-            <span>Category</span>
-        </a>
 
-        <a class="menuBottom__col" aria-label="Cart button" role="button">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNi42NjUgOS4wNjhsLTMuNjY1LTEuNjZ2MTRsMy42NjUgMi41OTIgMTQuMzM1LTIuMTU1di0xNC44NDVsLTE0LjMzNSAyLjA2OHptLTEuNjY1IDEuNDQxbDEgLjQ1M3YxMC4xMThsLTEtLjcwN3YtOS44NjR6bTE0IDkuNjE1bC0xMSAxLjY1M3YtMTAuODgxbDExLTEuNTg3djEwLjgxNXptLTItMTUuODMzbC0uMDAxIDEuNzQ5YzAgLjI0Ni0uMTguNDU1LS40MjMuNDkyLS4zMDMuMDQ1LS41NzYtLjE5LS41NzYtLjQ5NXYtMS43NDZjLjAwMS0uNjkxLS4yMzEtMS4zMDQtLjY1My0xLjcyNi0uMzY4LS4zNy0uODQ3LS41NjUtMS4zODQtLjU2NS0xLjU0NyAwLTIuOTYgMS41NTgtMi45NjMgMy4yNjh2MS42ODFjMCAuMjQ3LS4xODEuNDU3LS40MjUuNDk0LS4zMDIuMDQ2LS41NzUtLjE4OS0uNTc1LS40OTRsLjAwMS0xLjY4M2MuMDA0LTIuMjYxIDEuODY2LTQuMjY2IDMuOTYyLTQuMjY2IDEuNzE3IDAgMy4wMzkgMS4zODcgMy4wMzcgMy4yOTF6bS05Ljk5OSAyLjIwOXYtMi4yMzVjLjAwNC0yLjI2IDEuODY2LTQuMjY1IDMuOTYyLTQuMjY1LjQ5MiAwIC45NDQuMTI1IDEuMzUuMzMyLS40MjMuMTctLjgyMi40LTEuMTg4LjY4M2wtLjE2Mi0uMDE1Yy0xLjU0NyAwLTIuOTYxIDEuNTU4LTIuOTYzIDMuMjY4djIuMjMyYzAgLjI0OC0uMTgyLjQ1OC0uNDI3LjQ5NC0uMy4wNDUtLjU3Mi0uMTg3LS41NzItLjQ5NHoiLz48L3N2Zz4=">
-            <span>Cart</span>
-        </a>
-
-        <a class="menuBottom__col" aria-label="Wishlist button" role="button">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNi4yOCAzYzMuMjM2LjAwMSA0Ljk3MyAzLjQ5MSA1LjcyIDUuMDMxLjc1LTEuNTQ3IDIuNDY5LTUuMDIxIDUuNzI2LTUuMDIxIDIuMDU4IDAgNC4yNzQgMS4zMDkgNC4yNzQgNC4xODIgMCAzLjQ0Mi00Ljc0NCA3Ljg1MS0xMCAxMy01LjI1OC01LjE1MS0xMC05LjU1OS0xMC0xMyAwLTIuNjc2IDEuOTY1LTQuMTkzIDQuMjgtNC4xOTJ6bS4wMDEtMmMtMy4xODMgMC02LjI4MSAyLjE4Ny02LjI4MSA2LjE5MiAwIDQuNjYxIDUuNTcgOS40MjcgMTIgMTUuODA4IDYuNDMtNi4zODEgMTItMTEuMTQ3IDEyLTE1LjgwOCAwLTQuMDExLTMuMDk3LTYuMTgyLTYuMjc0LTYuMTgyLTIuMjA0IDAtNC40NDYgMS4wNDItNS43MjYgMy4yMzgtMS4yODUtMi4yMDYtMy41MjItMy4yNDgtNS43MTktMy4yNDh6Ii8+PC9zdmc+">
-            <span>Wishlist</span>
-        </a>
-
-        <a class="menuBottom__col" aria-label="Account Button" role="button">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMmMzLjAzMiAwIDUuNSAyLjQ2NyA1LjUgNS41IDAgMS40NTgtLjQ4MyAzLjE5Ni0zLjI0OCA1LjU5IDQuMTExIDEuOTYxIDYuNjAyIDUuMjUzIDcuNDgyIDguOTA5aC0xOS40ODZjLjk1NS00LjE4OCA0LjAwNS03LjM5OSA3LjUxOS04Ljg4OS0xLjYwMS0xLjI4Ny0zLjI2Ny0zLjMyMy0zLjI2Ny01LjYxIDAtMy4wMzMgMi40NjgtNS41IDUuNS01LjV6bTAtMmMtNC4xNDIgMC03LjUgMy4zNTctNy41IDcuNSAwIDIuMDEyLjc5NyAzLjgzNCAyLjA4NiA1LjE4Mi01LjAzIDMuMDA5LTYuNTg2IDguNTAxLTYuNTg2IDExLjMxOGgyNGMwLTIuNzkxLTEuNjU3LTguMjgtNi41OS0xMS4zMTQgMS4yOTItMS4zNDggMi4wOS0zLjE3MiAyLjA5LTUuMTg2IDAtNC4xNDMtMy4zNTgtNy41LTcuNS03LjV6Ii8+PC9zdmc+">
-            <span>Account</span>
-        </a>
-    </div>
 </body>
 <!-- Script Tags -->
 <script src="app/dist/script/navbar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+
+var App = new Vue({
+    el: '#app',
+    data: {
+        navbarAnchors: 0,
+        isCategoryClicked: false,
+        isHomeClicked: true,
+        isWishlistClicked: false,
+        isBagClicked: false,
+        isUserSettingsClicked: false
+    },
+    methods: {
+        navbarAnchorView: function (dataName) {
+            let dataJSONPropertyName = Object.keys(this.$data);
+
+            dataJSONPropertyName.forEach(propertyName => {
+                let isPropertyEqual = propertyName == dataName;
+
+                if (isPropertyEqual) {
+                    this.$data[propertyName] = !this.$data[propertyName];
+                } else {
+                    this.$data[propertyName] = false;
+                }
+            })
+        }
+    }
+});
+
+
+const anchors = document.querySelectorAll('#navbarAnchors > li');
+
+for (let i = 0; i < anchors.length; i++) {
+    anchors[i].addEventListener('click', function () {
+        App.navbarAnchors = i;
+    })
+}
+
+</script>
+
 </html>

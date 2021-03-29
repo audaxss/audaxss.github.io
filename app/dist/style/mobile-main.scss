@@ -110,6 +110,48 @@
     }
 }
 
+.mobileAnchors {
+
+    &__container {
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        overflow-x: scroll;
+        width: 100%;
+        background-color: #FFF;
+        display: flex;
+        align-items: center;
+        height: 47px;
+        padding: 0 2%;
+        border-bottom: 1px solid rgb(222, 222, 222);
+
+        ul {
+            display: flex;
+            align-items: center;
+            width: auto;
+
+            .active {
+                border-bottom: 3px solid #000;
+            }
+
+            li {
+                display: block;
+
+                a {
+
+                    padding: 10px 15px;
+                    white-space: nowrap;
+                    display: block;
+                    font-size: 16px;
+                    color: #8f8f8f;
+                }
+            }
+        }
+    }
+}
+
 .menuBottom {
     z-index: 9000;
     padding: 0 3%;
