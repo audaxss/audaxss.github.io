@@ -36,6 +36,10 @@ p {
   display: none;
 }
 
+.mobile-view {
+  display: none;
+}
+
 nav {
   position: fixed;
   z-index: 9999;
@@ -909,6 +913,8 @@ nav .navbar__menu ul li a i {
 }
 
 .wrapper__minheight {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
   min-height: 600px;
 }
 
@@ -919,6 +925,11 @@ nav .navbar__menu ul li a i {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100vh;
+}
+
+header {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 1400px;
 }
 
 header img {

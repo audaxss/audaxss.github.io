@@ -331,12 +331,12 @@
 
         <div id="marginTop"></div>
 
-        <template v-if="isHomeClicked == true || isCategoryClicked == true">
+        <template v-if="isHomeClicked || isCategoryClicked">
             <!-- Navbar Mobile -->
             <div class="mobileAnchors__container">
                 <ul id="navbarAnchors">
                     <li class="active"><a href="#">Women</a></li>
-                    <li><a href="#">Men</a></li>
+                    <li><a href="men">Men</a></li>
                     <li><a href="#">Luxury</a></li>
                     <li><a href="#">Kids</a></li>
                     <li><a href="#">Essentials</a></li>
@@ -382,27 +382,81 @@
         </div>
         <!-- Bottom Menu Desktop -->
 
-        <template v-if="isCategoryClicked == true">
-            <h2>Category</h2>
-        </template>
+        <!-- Content -->
+        <div class="mobile-view">
+            <template v-if="isCategoryClicked">
+                <template v-if="navbarAnchors == 0">
+                    <div class="category__container">
+                        <div class="category__col" style="background: url(https://pbs.twimg.com/media/ESJWrnVWkAEOSld.jpg);">
+                            <div class="category__title">
+                                <p>Ryujin</p>
+                            </div>
+                        </div>
 
-        <template v-else-if="isBagClicked == true">
-            <h2>Bag</h2>
-        </template>
+                        <div class="category__col" style="background: url(https://www.jazminemedia.com/wp-content/uploads/2020/09/jisoo.jpg);">
+                            <div class="category__title">
+                                <p>Jisoo</p>
+                            </div>
+                        </div>
+                        
+                        <div class="category__col" style="background: url(https://www.allkpop.com/upload/2020/10/content/182301/1603076504-20201018-mina.jpg);">
+                            <div class="category__title">
+                                <p>Mina</p>
+                            </div>
+                        </div>
 
-        <template v-else-if="isWishlistClicked == true">
-            <h2>Wishlist</h2>
-        </template>
+                        <div class="category__col" style="background: url(https://dbkpop.com/wp-content/uploads/2016/11/Twice_sana_profile_eyes_wide_open.jpg);">
+                            <div class="category__title">
+                                <p>Sana</p>
+                            </div>
+                        </div>
+                    </div>
+                </template>
 
-        <template v-else-if="isUserSettingsClicked == true">
-            <h2>User</h2>
-        </template>
+                <template v-else-if="navbarAnchors == 1">
+                    Men
+                </template>
 
-        <template v-else>
+                <template v-else-if="navbarAnchors == 2">
+                    Luxury
+                </template>
+
+                <template v-else-if="navbarAnchors == 3">
+                    Kids
+                </template>
+
+                <template v-else-if="navbarAnchors == 4">
+                    Essentials
+                </template>
+
+                <template v-else-if="navbarAnchors == 5">
+                    Beauty
+                </template>
+
+                <template v-else>
+                    Home & Lifestyle
+                </template>
+            </template>
+    
+            <template v-else-if="isBagClicked">
+                <h2>Bag</h2>
+            </template>
+    
+            <template v-else-if="isWishlistClicked">
+                <h2>Wishlist</h2>
+            </template>
+    
+            <template v-else-if="isUserSettingsClicked">
+                <h2>User</h2>
+            </template>
+        </div>
+
+        <template v-if="isHomeClicked">
+            <!-- Content -->
             <header class="wrapper__container">
-            <img src="https://static-ph.zacdn.com/cms/dy/FULLWIDTH_DESKTOP_Hero_ZBIRTHDAY2021.jpg" alt="">
-        </header>
-        </template>        
+                <!-- <img src="https://static-ph.zacdn.com/cms/dy/FULLWIDTH_DESKTOP_Hero_ZBIRTHDAY2021.jpg" alt=""> -->
+            </header>
+        </template> 
 
         <!-- Mobile Bottom Navigation -->
         <div class="menuBottom">
@@ -412,7 +466,7 @@
                 <span>Home</span>
             </a>
 
-            <a class="menuBottom__col" aria-label="Category button" role="button" @click="navbarAnchorView('isCategoryClicked')">
+            <a class="menuBottom__col" aria-label="Category button" role="button" @click="navbarAnchorView('isCategoryClicked'),preventMobileNavClicked(true)">
                 <img
                     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNCAyMmgtNHYtNGg0djR6bTAtMTJoLTR2NGg0di00em0wLThoLTR2NGg0di00em0zIDB2NGgxN3YtNGgtMTd6bTAgMTJoMTd2LTRoLTE3djR6bTAgOGgxN3YtNGgtMTd2NHoiLz48L3N2Zz4=">
                 <span>Category</span>
@@ -449,6 +503,7 @@ var App = new Vue({
     el: '#app',
     data: {
         navbarAnchors: 0,
+        isMobileView: true,
         isCategoryClicked: false,
         isHomeClicked: true,
         isWishlistClicked: false,
@@ -457,29 +512,42 @@ var App = new Vue({
     },
     methods: {
         navbarAnchorView: function (dataName) {
+            
             let dataJSONPropertyName = Object.keys(this.$data);
 
             dataJSONPropertyName.forEach(propertyName => {
                 let isPropertyEqual = propertyName == dataName;
 
                 if (isPropertyEqual) {
-                    this.$data[propertyName] = !this.$data[propertyName];
+                    this.$data[propertyName] = true;
+                    // this.$data[propertyName] = !this.$data[propertyName];
                 } else {
                     this.$data[propertyName] = false;
                 }
+
             })
+
+        },
+        preventMobileNavClicked: function (boolean) {
+            preventNavbar();
         }
     }
 });
 
+const anchors = Array.from(document.querySelectorAll('#navbarAnchors > li'));
 
-const anchors = document.querySelectorAll('#navbarAnchors > li');
-
-for (let i = 0; i < anchors.length; i++) {
-    anchors[i].addEventListener('click', function () {
-        App.navbarAnchors = i;
-    })
+            
+function preventNavbar() {
+    const anchors = document.querySelectorAll('#navbarAnchors > li a');
+    anchors.forEach((anchor) => { anchor.addEventListener('click', e => { e.preventDefault(); }) })
 }
+for (let i = 0; i < anchors.length; i++) {
+    anchors[i].addEventListener('click', function () { App.navbarAnchors = i; })
+}
+
+const toggleActiveAnchor = (e) => { anchors.forEach(anchor => {anchor.classList.remove('active'); }); e.currentTarget.classList.add('active')}
+
+anchors.forEach(anchor => { anchor.addEventListener('click', toggleActiveAnchor) });
 
 </script>
 
