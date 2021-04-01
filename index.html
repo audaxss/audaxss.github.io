@@ -325,26 +325,15 @@
             </div>
         </div>
         <!-- Submenu Category Desktop -->
+
+        <div id="notif" class="notif notif--y">
+            <p>Cart Updated</p>
+        </div>
     </nav>
 
     <main class="wrapper" id="app">
 
         <div id="marginTop"></div>
-
-        <template v-if="isHomeClicked || isCategoryClicked">
-            <!-- Navbar Mobile -->
-            <div class="mobileAnchors__container">
-                <ul id="navbarAnchors">
-                    <li class="active"><a href="#">Women</a></li>
-                    <li><a href="men">Men</a></li>
-                    <li><a href="#">Luxury</a></li>
-                    <li><a href="#">Kids</a></li>
-                    <li><a href="#">Essentials</a></li>
-                    <li><a href="#">Beauty</a></li>
-                    <li><a href="#">Home & Lifestyle</a></li>
-                </ul>
-            </div>
-        </template>
 
         <!-- Bottom Menu Desktop -->
         <div class="bottom__navbar wrapper__container">
@@ -380,45 +369,108 @@
                 </ul>
             </div>
         </div>
-        <!-- Bottom Menu Desktop -->
+
+        <!-- Navbar Mobile -->
+        <div v-show="isCategoryClicked" class="mobileAnchors__container">
+            <ul id="navbarAnchorsCategory">
+                <li class="active"><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Luxury</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Essentials</a></li>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Home & Lifestyle</a></li>
+            </ul>
+        </div>
 
         <!-- Content -->
         <div class="mobile-view">
+            <!-- category content -->
             <template v-if="isCategoryClicked">
+
                 <template v-if="navbarAnchors == 0">
                     <div class="category__container">
-                        <div class="category__col" style="background: url(https://pbs.twimg.com/media/ESJWrnVWkAEOSld.jpg);">
+                        <a href="#" class="category__col"
+                            style="background: url(https://pbs.twimg.com/media/ESJWrnVWkAEOSld.jpg);">
                             <div class="category__title">
                                 <p>Ryujin</p>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="category__col" style="background: url(https://www.jazminemedia.com/wp-content/uploads/2020/09/jisoo.jpg);">
+                        <a href="#" class="category__col"
+                            style="background: url(https://www.jazminemedia.com/wp-content/uploads/2020/09/jisoo.jpg);">
                             <div class="category__title">
                                 <p>Jisoo</p>
                             </div>
-                        </div>
-                        
-                        <div class="category__col" style="background: url(https://www.allkpop.com/upload/2020/10/content/182301/1603076504-20201018-mina.jpg);">
+                        </a>
+
+                        <a href="#" class="category__col"
+                            style="background: url(https://www.allkpop.com/upload/2020/10/content/182301/1603076504-20201018-mina.jpg);">
                             <div class="category__title">
                                 <p>Mina</p>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="category__col" style="background: url(https://dbkpop.com/wp-content/uploads/2016/11/Twice_sana_profile_eyes_wide_open.jpg);">
+                        <a href="#" class="category__col"
+                            style="background: url(https://dbkpop.com/wp-content/uploads/2016/11/Twice_sana_profile_eyes_wide_open.jpg);">
                             <div class="category__title">
                                 <p>Sana</p>
                             </div>
-                        </div>
+                        </a>
+
+                        <a href="#" class="category__col"
+                            style="background: url(https://www.allkpop.com/upload/2020/10/content/182301/1603076504-20201018-mina.jpg);">
+                            <div class="category__title">
+                                <p>Mina</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="category__col"
+                            style="background: url(https://www.allkpop.com/upload/2020/10/content/182301/1603076504-20201018-mina.jpg);">
+                            <div class="category__title">
+                                <p>Mina</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="category__col"
+                            style="background: url(https://www.allkpop.com/upload/2020/10/content/182301/1603076504-20201018-mina.jpg);">
+                            <div class="category__title">
+                                <p>Mina</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="category__col"
+                            style="background: url(https://www.allkpop.com/upload/2020/10/content/182301/1603076504-20201018-mina.jpg);">
+                            <div class="category__title">
+                                <p>Mina</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="category__col"
+                            style="background: url(https://www.allkpop.com/upload/2020/10/content/182301/1603076504-20201018-mina.jpg);">
+                            <div class="category__title">
+                                <p>Mina</p>
+                            </div>
+                        </a>
                     </div>
                 </template>
 
                 <template v-else-if="navbarAnchors == 1">
-                    Men
+                    <a href="#" class="category__col"
+                        style="background: url(https://dbkpop.com/wp-content/uploads/2016/11/Twice_sana_profile_eyes_wide_open.jpg);">
+                        <div class="category__title">
+                            <p>Sana</p>
+                        </div>
+                    </a>
                 </template>
 
                 <template v-else-if="navbarAnchors == 2">
-                    Luxury
+                    <a href="#" class="category__col"
+                        style="background: url(https://www.allkpop.com/upload/2020/10/content/182301/1603076504-20201018-mina.jpg);">
+                        <div class="category__title">
+                            <p>Mina</p>
+                        </div>
+                    </a>
                 </template>
 
                 <template v-else-if="navbarAnchors == 3">
@@ -437,36 +489,175 @@
                     Home & Lifestyle
                 </template>
             </template>
-    
+
+            <!-- Cart Content -->
             <template v-else-if="isBagClicked">
-                <h2>Bag</h2>
+
+                <div class="mobileAnchors__container">
+                    <p class="header">My Shopping Bag</p>
+                </div>
+                
+                <!-- Checkout Subtotal -->
+                <div class="checkout__subtotal">
+                    <div class="checkout__subtotal__col">
+                        <span>Subtotal excl, shipping</span>
+                        <p>Php 100,000,000.00</p>
+                    </div>
+
+                    <div class="checkout__subtotal__col">
+                        <a href="#">Go to checkout</a>
+                    </div>
+                </div>
+
+                <!-- Shipping & Internal Fee -->
+                <div class="checkout__subtotal checkout__subtotal--gray">
+                    <div class="checkout__subtotal__col">
+                        <p>Sold by<br>INFLUENCE Overseas Shipment</p>
+                    </div>
+
+                    <div class="checkout__subtotal__col">
+                        <p>Estimated shipping: <strong>Php 100.00</strong></p>
+                        <p>Internal fees: <strong>Php 10,000.00</strong></p>
+                    </div>
+                </div>
+
+                <!-- Note -->
+                <div class="checkout__subtotal checkout__subtotal--light">
+                    <p>Add your address at checkout for applicable shipping fee waivers or discounts!</p>
+                </div>
+
+                <!-- Products -->
+                <div class="checkout__products__container">    
+                    <!-- Column -->
+                    <div class="checkout__products">
+                        <div class="checkout__products__col">
+                            <img src="https://dynamic.zacdn.com/cd18Zqi2B1nNptFEMZr29cGz0I8=/fit-in/284x412/filters:quality(80):fill(ffffff)/http://static.ph.zalora.net/p/michael-kors-9680-2119391-1.jpg" alt="">
+                        </div>
+
+                        <div class="checkout__products__col">
+                            <div class="header">
+                                <h4>MICHAEL KORS</h4>
+                                <button>X</button>
+                            </div>
+
+                            <p>Lillie L Shoulder Bag (zt)</p>
+                            <p><strong>Php 31,949.00</strong></p>
+
+                            <div class="two-con">
+                                <div class="two-col">
+                                    <p>Qty:</p>
+                                </div>
+
+                                <div class="two-col">
+                                    <counter v-model='quantity'></counter>
+                                </div>
+                            </div>
+
+                            <div class="two-con">
+                                <div class="two-col">
+                                    <p>Size:</p>
+                                </div>
+
+                                <div class="two-col">
+                                    <p>One Size</p>
+                                </div>
+                            </div>
+
+                            <p class="avail--y">Currently available</p>
+                            <!-- <p class="avail--n">3 Stocks Available</p> -->
+
+                            <p>Greater NCR: 2-4 days, Major cities: 3-8 days, Provincial: 4-9 days. All in working days Or Delivered within two (2) working days with  Express shipping</p>
+                        </div>
+                    </div>
+
+                    <!-- Column -->
+                    <div class="checkout__products">
+                        <div class="checkout__products__col">
+                            <img src="https://dynamic.zacdn.com/WSVn6tVaFC7VvLCGGbAbn2f5Ydw=/fit-in/142x206/filters:quality(80):fill(ffffff)/http://static.ph.zalora.net/p/nine-west-5196-5220391-1.jpg" alt="">
+                        </div>
+
+                        <div class="checkout__products__col">
+                            <div class="header">
+                                <h4>
+                                    Nine West</h4>
+                                <button>X</button>
+                            </div>
+
+                            <p>Channa Jet Set Carryall</p>
+                            <p><strong class="avail--n">Php 4,950.00</strong> <span class="strike">Php 10,000.00</span></p>
+
+                            <div class="two-con">
+                                <div class="two-col">
+                                    <p>Qty:</p>
+                                </div>
+
+                                <div class="two-col">
+                                    <counter v-model='quantity'></counter>
+                                </div>
+                            </div>
+
+                            <div class="two-con">
+                                <div class="two-col">
+                                    <p>Size:</p>
+                                </div>
+
+                                <div class="two-col">
+                                    <p>One Size</p>
+                                </div>
+                            </div>
+
+                            <p class="avail--y">Currently available</p>
+                            <!-- <p class="avail--n">Only 2 items left</p> -->
+
+                            <p>Greater NCR: 2-4 days, Major cities: 3-8 days, Provincial: 4-9 days. All in working days Or Delivered within two (2) working days with  Express shipping</p>
+                        </div>
+                    </div>
+                </div>
             </template>
-    
+
+            <!-- Wishlist Content -->
             <template v-else-if="isWishlistClicked">
                 <h2>Wishlist</h2>
             </template>
-    
+
+            <!-- User Content -->
             <template v-else-if="isUserSettingsClicked">
                 <h2>User</h2>
             </template>
         </div>
 
         <template v-if="isHomeClicked">
+            <!-- Navbar Mobile -->
+            <div class="mobileAnchors__container">
+                <ul id="navbarAnchors">
+                    <li class="active"><a href="#">Women</a></li>
+                    <li><a href="men">Men</a></li>
+                    <li><a href="#">Luxury</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Essentials</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Home & Lifestyle</a></li>
+                </ul>
+            </div>
             <!-- Content -->
             <header class="wrapper__container">
-                <!-- <img src="https://static-ph.zacdn.com/cms/dy/FULLWIDTH_DESKTOP_Hero_ZBIRTHDAY2021.jpg" alt=""> -->
+                <img src="https://static-ph.zacdn.com/cms/dy/FULLWIDTH_DESKTOP_Hero_ZBIRTHDAY2021.jpg" alt="">
             </header>
-        </template> 
+        </template>
+
+        <div class="marginBottom"></div>
 
         <!-- Mobile Bottom Navigation -->
         <div class="menuBottom">
-            <a class="menuBottom__col" href="index.html" aria-label="Home button" role="button" @click="navbarAnchorView('isHomeClicked')">
+            <a class="menuBottom__col" href="index.html" aria-label="Home button" role="button"
+                @click="navbarAnchorView('isHomeClicked')">
                 <img
                     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjAgNy4wOTN2LTUuMDkzaC0zdjIuMDkzbDMgM3ptNCA1LjkwN2wtMTItMTItMTIgMTJoM3YxMGg3di01aDR2NWg3di0xMGgzem0tNSA4aC0zdi01aC04djVoLTN2LTEwLjI2bDctNi45MTIgNyA2Ljk5djEwLjE4MnoiLz48L3N2Zz4=">
                 <span>Home</span>
             </a>
 
-            <a class="menuBottom__col" aria-label="Category button" role="button" @click="navbarAnchorView('isCategoryClicked'),preventMobileNavClicked(true)">
+            <a class="menuBottom__col" aria-label="Category button" role="button"
+                @click="navbarAnchorView('isCategoryClicked'), preventMobileNavClicked()">
                 <img
                     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNCAyMmgtNHYtNGg0djR6bTAtMTJoLTR2NGg0di00em0wLThoLTR2NGg0di00em0zIDB2NGgxN3YtNGgtMTd6bTAgMTJoMTd2LTRoLTE3djR6bTAgOGgxN3YtNGgtMTd2NHoiLz48L3N2Zz4=">
                 <span>Category</span>
@@ -478,13 +669,15 @@
                 <span>Cart</span>
             </a>
 
-            <a class="menuBottom__col" aria-label="Wishlist button" role="button" @click="navbarAnchorView('isWishlistClicked')">
+            <a class="menuBottom__col" aria-label="Wishlist button" role="button"
+                @click="navbarAnchorView('isWishlistClicked')">
                 <img
                     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNi4yOCAzYzMuMjM2LjAwMSA0Ljk3MyAzLjQ5MSA1LjcyIDUuMDMxLjc1LTEuNTQ3IDIuNDY5LTUuMDIxIDUuNzI2LTUuMDIxIDIuMDU4IDAgNC4yNzQgMS4zMDkgNC4yNzQgNC4xODIgMCAzLjQ0Mi00Ljc0NCA3Ljg1MS0xMCAxMy01LjI1OC01LjE1MS0xMC05LjU1OS0xMC0xMyAwLTIuNjc2IDEuOTY1LTQuMTkzIDQuMjgtNC4xOTJ6bS4wMDEtMmMtMy4xODMgMC02LjI4MSAyLjE4Ny02LjI4MSA2LjE5MiAwIDQuNjYxIDUuNTcgOS40MjcgMTIgMTUuODA4IDYuNDMtNi4zODEgMTItMTEuMTQ3IDEyLTE1LjgwOCAwLTQuMDExLTMuMDk3LTYuMTgyLTYuMjc0LTYuMTgyLTIuMjA0IDAtNC40NDYgMS4wNDItNS43MjYgMy4yMzgtMS4yODUtMi4yMDYtMy41MjItMy4yNDgtNS43MTktMy4yNDh6Ii8+PC9zdmc+">
                 <span>Wishlist</span>
             </a>
 
-            <a class="menuBottom__col" aria-label="Account Button" role="button" @click="navbarAnchorView('isUserSettingsClicked')">
+            <a class="menuBottom__col" aria-label="Account Button" role="button"
+                @click="navbarAnchorView('isUserSettingsClicked')">
                 <img
                     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMmMzLjAzMiAwIDUuNSAyLjQ2NyA1LjUgNS41IDAgMS40NTgtLjQ4MyAzLjE5Ni0zLjI0OCA1LjU5IDQuMTExIDEuOTYxIDYuNjAyIDUuMjUzIDcuNDgyIDguOTA5aC0xOS40ODZjLjk1NS00LjE4OCA0LjAwNS03LjM5OSA3LjUxOS04Ljg4OS0xLjYwMS0xLjI4Ny0zLjI2Ny0zLjMyMy0zLjI2Ny01LjYxIDAtMy4wMzMgMi40NjgtNS41IDUuNS01LjV6bTAtMmMtNC4xNDIgMC03LjUgMy4zNTctNy41IDcuNSAwIDIuMDEyLjc5NyAzLjgzNCAyLjA4NiA1LjE4Mi01LjAzIDMuMDA5LTYuNTg2IDguNTAxLTYuNTg2IDExLjMxOGgyNGMwLTIuNzkxLTEuNjU3LTguMjgtNi41OS0xMS4zMTQgMS4yOTItMS4zNDggMi4wOS0zLjE3MiAyLjA5LTUuMTg2IDAtNC4xNDMtMy4zNTgtNy41LTcuNS03LjV6Ii8+PC9zdmc+">
                 <span>Account</span>
@@ -497,58 +690,6 @@
 <!-- Script Tags -->
 <script src="app/dist/script/navbar.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-<script>
-
-var App = new Vue({
-    el: '#app',
-    data: {
-        navbarAnchors: 0,
-        isMobileView: true,
-        isCategoryClicked: false,
-        isHomeClicked: true,
-        isWishlistClicked: false,
-        isBagClicked: false,
-        isUserSettingsClicked: false
-    },
-    methods: {
-        navbarAnchorView: function (dataName) {
-            
-            let dataJSONPropertyName = Object.keys(this.$data);
-
-            dataJSONPropertyName.forEach(propertyName => {
-                let isPropertyEqual = propertyName == dataName;
-
-                if (isPropertyEqual) {
-                    this.$data[propertyName] = true;
-                    // this.$data[propertyName] = !this.$data[propertyName];
-                } else {
-                    this.$data[propertyName] = false;
-                }
-
-            })
-
-        },
-        preventMobileNavClicked: function (boolean) {
-            preventNavbar();
-        }
-    }
-});
-
-const anchors = Array.from(document.querySelectorAll('#navbarAnchors > li'));
-
-            
-function preventNavbar() {
-    const anchors = document.querySelectorAll('#navbarAnchors > li a');
-    anchors.forEach((anchor) => { anchor.addEventListener('click', e => { e.preventDefault(); }) })
-}
-for (let i = 0; i < anchors.length; i++) {
-    anchors[i].addEventListener('click', function () { App.navbarAnchors = i; })
-}
-
-const toggleActiveAnchor = (e) => { anchors.forEach(anchor => {anchor.classList.remove('active'); }); e.currentTarget.classList.add('active')}
-
-anchors.forEach(anchor => { anchor.addEventListener('click', toggleActiveAnchor) });
-
-</script>
+<script src="app/dist/script/app.js"></script>
 
 </html>

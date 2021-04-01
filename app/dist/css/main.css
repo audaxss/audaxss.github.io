@@ -17,7 +17,7 @@ body {
 }
 
 body {
-  height: 200vh;
+  height: 100%;
 }
 
 img {
@@ -37,6 +37,10 @@ p {
 }
 
 .mobile-view {
+  display: none;
+}
+
+.notif {
   display: none;
 }
 
