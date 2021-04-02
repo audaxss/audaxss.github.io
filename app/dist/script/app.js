@@ -26,14 +26,11 @@ Vue.component('counter', {
 
             setTimeout(() => {
                 notif.classList.remove('notif--open')
-            }, 2000);
+            }, 3000);
         }
     }
 })
 
-Vue.component('notif', {
-    template: ``
-})
 
 var App = new Vue({
     el: '#app',
@@ -83,7 +80,7 @@ var App = new Vue({
 
             setTimeout(() => {
                 notif.classList.remove('notif--open')
-            }, 2000);
+            }, 3000);
         }
     }
 });

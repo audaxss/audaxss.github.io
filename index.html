@@ -505,7 +505,7 @@
                     </div>
 
                     <div class="checkout__subtotal__col">
-                        <a href="#">Go to checkout</a>
+                        <a class="button" href="#">Go to checkout</a>
                     </div>
                 </div>
 
@@ -613,11 +613,130 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Promo code -->
+                <div class="checkout__promocode__container">
+                    <p>APPLY PROMO CODE OR GIFT CARD</p>
+
+                    <form action="">
+                        <input type="text" palceholder="Enter Coupon code here" name="" id="">
+                        <button>Apply</button>
+                    </form>
+                </div>
+
+                <div class="checkout__products__container">
+                    <div class="two-con">
+                        <div class="two-col">
+                            <span>Subtotal</span>
+                        </div>
+
+                        <div class="two-col">
+                            <span>Php 36,948.00</span>
+                        </div>
+                    </div>
+
+                    <div class="two-con">
+                        <div class="two-col">
+                            <span>Shipping:</span>
+                        </div>
+
+                        <div class="two-col">
+                            <span>Php 49.00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="two-con grandtotal">
+                        <div class="two-col">
+                            <span><strong>Grand Total</strong></span>
+                        </div>
+
+                        <div class="two-col">
+                            <span>Php 4,999.00</span>
+                        </div>
+                    </div><br>
+                    
+                    <a href="#" class="button">Go to Checkout</a>
+                    <a href="#" class="button button--border">Continue Shopping</a>
+                </div>
             </template>
 
             <!-- Wishlist Content -->
             <template v-else-if="isWishlistClicked">
-                <h2>Wishlist</h2>
+                <div class="mobileAnchors__container">
+                    <p class="header">My Wishlist</p>
+                </div>
+
+                <div class="mobileAnchors__container">
+                    <a href="" class="button">Add all to bag</a>
+                </div>
+
+                <div class="checkout__products__container">    
+                    <!-- Column -->
+                    <div class="checkout__products">
+                        <div class="checkout__products__col">
+                            <img src="https://dynamic.zacdn.com/cd18Zqi2B1nNptFEMZr29cGz0I8=/fit-in/284x412/filters:quality(80):fill(ffffff)/http://static.ph.zalora.net/p/michael-kors-9680-2119391-1.jpg" alt="">
+                        </div>
+
+                        <div class="checkout__products__col">
+                            <div class="header">
+                                <h4>MICHAEL KORS</h4>
+                                <button>X</button>
+                            </div>
+
+                            <p>Lillie L Shoulder Bag (zt)</p>
+                            <p><strong>Php 31,949.00</strong></p>
+
+                            <div class="two-con">
+                                <div class="two-col">
+                                    <p>Size:</p>
+                                </div>
+
+                                <div class="two-col">
+                                    <p>One Size</p>
+                                </div>
+                            </div>
+
+                            <p class="avail--y">In Stock</p>
+
+                            <a href="#" class="button">Add to Bag</a>
+                            <!-- <p class="avail--n">3 Stocks Available</p> -->
+                        </div>
+                    </div>
+
+                    <!-- Column -->
+                    <div class="checkout__products">
+                        <div class="checkout__products__col">
+                            <img src="https://dynamic.zacdn.com/WSVn6tVaFC7VvLCGGbAbn2f5Ydw=/fit-in/142x206/filters:quality(80):fill(ffffff)/http://static.ph.zalora.net/p/nine-west-5196-5220391-1.jpg" alt="">
+                        </div>
+
+                        <div class="checkout__products__col">
+                            <div class="header">
+                                <h4>
+                                    Nine West</h4>
+                                <button>X</button>
+                            </div>
+
+                            <p>Channa Jet Set Carryall</p>
+                            <p><strong class="avail--n">Php 4,950.00</strong> <span class="strike">Php 10,000.00</span></p>
+
+                            <div class="two-con">
+                                <div class="two-col">
+                                    <p>Size:</p>
+                                </div>
+
+                                <div class="two-col">
+                                    <p>One Size</p>
+                                </div>
+                            </div>
+
+                            <p class="avail--y">In Stock</p>
+
+                            <a href="#" class="button">Add to Bag</a>
+                            </div>
+                    </div>
+                    <a href="#" class="button">Add all to bag</a>
+                    <a href="#" class="button button--border">Continue Shopping</a>
+                </div>
             </template>
 
             <!-- User Content -->

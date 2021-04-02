@@ -124,7 +124,7 @@
         background-color: #FFF;
         display: flex;
         align-items: center;
-        height: 47px;
+        min-height: 47px;
         padding: 0 2%;
         border-bottom: 1px solid rgb(222, 222, 222);
 
@@ -320,33 +320,25 @@
             p {
                 font-size: 14px;
             }
-
-            a {
-                padding: 10px;
-                text-align: center;
-                color: #FFF;
-                width: 100%;
-                display: block;
-                background-color: #000;
-            }
         }
     }
 
     &__products {
-        padding: 20px 15px;
+
         display: grid;
         grid-template-columns: .5fr 1fr;
         background-color: #FFF;
         border-bottom: 1px solid rgb(223, 223, 223);
 
         &__container {
+            padding: 20px 15px;
             display: block;
-            background-color: red;
             width: 100%;
             height: auto;
         }
 
         &__col {
+            padding: 20px 0;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
             strong {
@@ -372,8 +364,9 @@
             }
 
             p {
-                font-size: 13px;
+                font-size: 12px;
                 margin-bottom: 10px;
+                line-height: 18px;
 
                 span.strike {
                     color: #888888;
@@ -381,62 +374,7 @@
                 }
             }
 
-            .two {
-                &-con {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                }
 
-                &-col {
-                    padding: 10px 0;
-
-                    &:first-child {
-                        p {
-                            color: #7c7c7c;
-                        }
-                    }
-
-                    &:last-child {
-                        text-align: right;
-
-                        p {
-                            margin-right: 40px;
-                        }
-                    }
-
-                    p {
-                        margin-bottom: 0;
-                    }
-
-                    .quantityCounter {
-                        height: 30px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: flex-end;
-                        flex-direction: row;
-
-                        button,
-                        span {
-                            border: 1px solid #bdbdbd;
-                            text-align: center;
-                            display: inline-block;
-                            height: 100%;
-                            width: 30px;
-                            background-color: transparent;
-                        }
-
-                        button {
-                            cursor: pointer;
-                        }
-
-                        span {
-                            padding: 2px;
-                            border-left: 0;
-                            border-right: 0;
-                        }
-                    }
-                }
-            }
 
             .avail {
 
@@ -455,6 +393,131 @@
             }
         }
     }
+
+    &__promocode {
+
+        &__container {
+            background-color: rgb(244, 244, 244);
+            width: 100%;
+            padding: 10px;
+
+            p {
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                background-color: rgb(35, 129, 137);
+
+                input,
+                button {
+                    border: 2px solid rgb(35, 129, 137);
+                    padding: 8px;
+                }
+
+                button {
+                    cursor: pointer;
+                    width: 150px;
+                    background-color: rgb(35, 129, 137);
+                    color: #FFF;
+                }
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.button {
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    text-align: center;
+    color: #FFF;
+    width: 100%;
+    display: block;
+    background-color: #000;
+    border: 1px solid #000;
+
+    &--border {
+        margin: 10px 0;
+        color: #000;
+        background-color: transparent !important;
+        border: 1px solid #000;
+    }
+}
+
+.two {
+    &-con {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &-col {
+        span {
+            font-size: 13px;
+            color: #000;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        padding: 10px 0;
+
+        &:first-child {
+            p {
+                color: #7c7c7c;
+            }
+        }
+
+        &:last-child {
+            text-align: right;
+
+            p {
+                margin-right: 40px;
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .quantityCounter {
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: row;
+
+            button,
+            span {
+                border: 1px solid #bdbdbd;
+                text-align: center;
+                display: inline-block;
+                height: 100%;
+                width: 30px;
+                background-color: transparent;
+            }
+
+            button {
+                cursor: pointer;
+            }
+
+            span {
+                padding: 2px;
+                border-left: 0;
+                border-right: 0;
+            }
+        }
+    }
+}
+
+.grandtotal {
+    border-top: 1px solid #7c7c7c
 }
 
 .notif {
