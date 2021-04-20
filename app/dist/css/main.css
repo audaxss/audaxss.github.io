@@ -2201,7 +2201,13 @@ header img {
 }
 
 .cart__detail form {
-  width: 60%;
+  width: 100%;
+}
+
+@media screen and (min-width: 790px) {
+  .cart__detail form {
+    width: 60%;
+  }
 }
 
 .cart__detail form .button {
@@ -2495,7 +2501,8 @@ header img {
 }
 
 .login--350 {
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
 }
 
 .login__form {
@@ -2641,7 +2648,8 @@ header img {
 }
 
 .login__container {
-  width: 550px;
+  max-width: 550px;
+  width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

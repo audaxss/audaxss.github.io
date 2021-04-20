@@ -1067,7 +1067,11 @@ header {
         }
 
         form {
-            width: 60%;
+            width: 100%;
+
+            @include device(tablet) {
+                width: 60%;
+            }
 
             .button {
                 width: 150px;
@@ -1321,7 +1325,8 @@ header {
 .login {
 
     &--350 {
-        width: 350px;
+        max-width: 350px;
+        width: 100%;
     }
 
     &__form {
@@ -1462,8 +1467,8 @@ header {
     }
 
     &__container {
-
-        width: 550px;
+        max-width: 550px;
+        width: 100%;
         height: fit-content;
         background-color: #FFF;
         display: grid;
