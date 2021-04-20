@@ -4,7 +4,7 @@
 <head>
     <!-- Primary Meta Tags -->
     <meta charset="UTF-8">
-    <title> Influence | Home </title>
+    <title> web_title </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="web_title">
     <meta name="description" content="web_desc">
@@ -30,6 +30,12 @@
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+        integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
+        integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="app/build/style/main.min.css">
     <link rel="stylesheet" type="text/css" href="app/build/style/mobile-main.min.css"
         media="screen and (max-width: 789px)">
@@ -61,7 +67,7 @@
                 <div class="navbar__anchors">
                     <ul>
                         <!-- add class="navbar__anchors--active" if the page is active -->
-                        <li><a href="#">Women</a></li>
+                        <li><a class="navbar__anchors--active" href="#">Women</a></li>
                         <li><a href="#">Men</a></li>
                         <li><a href="#">Luxury</a></li>
                         <li><a href="#">Kids</a></li>
@@ -146,7 +152,7 @@
             </div>
 
             <!-- Submenu Category Desktop -->
-            <!-- <div class="submenu__container wrapper" id="submenu">
+            <div class="submenu__container wrapper" id="submenu">
                 <div class="submenu wrapper__container">
                     <ul>
                         <div class="submenu__anchors" id="submenu__anchors">
@@ -325,7 +331,7 @@
                         </div>
                     </ul>
                 </div>
-            </div> -->
+            </div>
 
             <div id="notif" class="notif notif--y">
                 <p>{{notificationMessage}}</p>
@@ -885,181 +891,298 @@
             </div>
 
             <!-- Content -->
-            <header class="wrapper__container">
-
-                <div class="header__boxContainer">
-                    <div class="header__threecol">
-
-                        <div class="header__column mobile-view header__index">
-                            <a href="#" class="header__button header__button--left">Shop Women</a>
-                            <a href="#" class="header__button header__button--right">Shop Men</a>
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/MOBILE/Mobile_Unisex_Homepage_600x600.jpg"
-                                alt="">
-                        </div>
-
-                        <a href="#" class="header__column desktop-view">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/DESKTOP/Women_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column desktop-view">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/DESKTOP/Men_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column desktop-view">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/DESKTOP/Kids_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column mobile-view">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/MOBILE/Mobile_Kids_Homepage_370x320.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column">
-                            <img src="https://static-sg.zacdn.com/cms/DY/Oct20/CW42/HOMEPAGEREVAMP/Lifestyle_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/DESKTOP/Beauty_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/DESKTOP/Luxury_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column header__index mobile-view">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW41/GTL/APP_Skinny.jpg" alt="">
-                        </a>
-                    </div>
+            <header class="wrapper">
+                <div class="wrapper__container content__container--996">
+                    <img src="https://static-ph.zacdn.com/cms/RR2021/CarouselBanner1kate.jpg" alt="">
                 </div>
 
+                <div class="header__slider wrapper__container content__container--996">
+                    <div class="header__pages">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Kate Spade New York</a></li>
+                        </ul>
+
+                        <p class="left">Buy kate spade new york Philippines</p>
+                    </div>
+
+                    <div class="header__pages header__pages--result">
+                        <h3>Kate Spade New York</h3>
+
+                        <div class="left">
+                            <p>222 Items found | <strong>SORT BY</strong></p>
+
+                            <form action="#" action="">
+                                <select name="" id="">
+                                    <option value="">Popularity</option>
+                                    <option value="">Lowest Price</option>
+                                    <option value="">Highest Price</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </header>
 
-
             <div class="wrapper">
-                <div class="content__container content__container--1200 wrapper__container content__center">
-                    <div class="content__header">
-                        <h2>Featured Brand</h2>
+                <div class="products__container wrapper__container content__container--996">
+                    <div class="products__column">
+                        <div class="products__filter">
+                            <div class="filter__column filter__column--arrow">
+                                <p>Filter By</p>
+
+                                <span id="filterShowToggle" class="hide">Show</span>
+                            </div>
+
+                            <div id="filterShow">
+                                <div class="filter__column" id="filter">
+                                    <div class="filter__title filter__column--arrow" id="filter-btn">
+                                        <p>Material</p>
+                                        <i class="fas fa-sort-up"></i>
+                                    </div>
+    
+                                    <div class="filter__items" id="filter-items">
+                                        <form action="#">
+                                            <ul>
+                                                <li>
+                                                    <label for="item1">
+                                                        <input type="checkbox" name="" id="item1" value=""> 
+                                                        <span>Item 1</span> 
+                                                    </label>
+                                                </li>
+    
+                                                <li>
+                                                    <label for="item2">
+                                                        <input type="checkbox" name="" id="item2" value=""> 
+                                                        <span>Item 2</span> 
+                                                    </label>
+                                                </li>
+    
+                                                <li>
+                                                    <label for="item3">
+                                                        <input type="checkbox" name="" id="item3" value=""> 
+                                                        <span>Item 3</span> 
+                                                    </label> 
+                                                </li>
+                                            </ul>
+                                        </form>
+                                    </div>
+    
+                                    
+                                </div>
+    
+                                <div class="filter__column" id="filter">
+                                    <div class="filter__title filter__column--arrow" id="filter-btn">
+                                        <p>Occasion</p>
+                                        <i class="fas fa-sort-up"></i>
+                                    </div>
+    
+                                    <div class="filter__items" id="filter-items">
+                                        <form action="#">
+                                            <ul>
+                                                <li>
+                                                    <label for="itemA1">
+                                                        <input type="checkbox" name="" id="itemA1" value=""> 
+                                                        <span>Item 1</span> 
+                                                    </label>
+                                                </li>
+    
+                                                <li>
+                                                    <label for="itemA2">
+                                                        <input type="checkbox" name="" id="itemA2" value=""> 
+                                                        <span>Item 2</span> 
+                                                    </label>
+                                                </li>
+    
+                                                <li>
+                                                    <label for="itemA3">
+                                                        <input type="checkbox" name="" id="itemA3" value=""> 
+                                                        <span>Item 3</span> 
+                                                    </label> 
+                                                </li>
+                                            </ul>
+                                        </form>
+                                    </div>
+    
+                                    
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    
+                    <div class="products__column">
+                        <div class="products__items">
+                            <a href="#" class="products__item__col">
+                                <div class="products__item__image">
+                                    <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg" alt="">
+                                </div>
 
-                    <div class="content__fbrands">
-                        <a href="#">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_avon_Logo.jpg" alt="">
-                        </a>
+                                <div class="products__item__detail">
+                                    <p>Kate spade new york</p>
+                                    <hr>
+                                    <span class="products__item__type">
+                                        Large Crossbody Bag (cv)
+                                    </span>
+                                </div>
 
-                        <a href="#">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_belo_Logo.jpg" alt="">
-                        </a>
+                                <div class="products__item__price">
+                                    <p>
+                                        <span class="strike">
+                                            Php 5,769.00
+                                        </span>
+                                        <br>
+                                        <span class="price">
+                                            NOW Php 69.00
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
 
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_casio_Logo.jpg" alt="">
-                        </a>
+                            <a href="#" class="products__item__col">
+                                <div class="products__item__image">
+                                    <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg" alt="">
+                                </div>
 
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_mango_Logo.jpg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_mendrez_Logo.jpg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_new_balance_Logo.jpg"
-                                alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_penshoppe_Logo.jpg"
-                                alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_regatta_Logo.jpg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_river-island_Logo.jpg"
-                                alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_sunnies_Logo.jpg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_superdry_Logo.jpg"
-                                alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_wallis_Logo.jpg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/DY/Homepage_137x83_ShapesAndCurves.jpg"
-                                alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_zalora_Logo.jpg" alt="">
-                        </a>
+                                <div class="products__item__detail">
+                                    <p>Kate spade new york</p>
+                                    <hr>
+                                    <span class="products__item__type">
+                                        Large Crossbody Bag (cv)
+                                    </span>
+                                </div>
+
+                                <div class="products__item__price">
+                                    <p>
+                                        <span class="strike">
+                                            Php 5,769.00
+                                        </span>
+                                        <br>
+                                        <span class="price">
+                                            NOW Php 69.00
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="products__item__col">
+                                <div class="products__item__image">
+                                    <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg" alt="">
+                                </div>
+
+                                <div class="products__item__detail">
+                                    <p>Kate spade new york</p>
+                                    <hr>
+                                    <span class="products__item__type">
+                                        Large Crossbody Bag (cv)
+                                    </span>
+                                </div>
+
+                                <div class="products__item__price">
+                                    <p>
+                                        <span class="strike">
+                                            Php 5,769.00
+                                        </span>
+                                        <br>
+                                        <span class="price">
+                                            NOW Php 69.00
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="products__item__col">
+                                <div class="products__item__image">
+                                    <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg" alt="">
+                                </div>
+
+                                <div class="products__item__detail">
+                                    <p>Kate spade new york</p>
+                                    <hr>
+                                    <span class="products__item__type">
+                                        Large Crossbody Bag (cv)
+                                    </span>
+                                </div>
+
+                                <div class="products__item__price">
+                                    <p>
+                                        <span class="strike">
+                                            Php 5,769.00
+                                        </span>
+                                        <br>
+                                        <span class="price">
+                                            NOW Php 69.00
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="products__item__col">
+                                <div class="products__item__image">
+                                    <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg" alt="">
+                                </div>
+
+                                <div class="products__item__detail">
+                                    <p>Kate spade new york</p>
+                                    <hr>
+                                    <span class="products__item__type">
+                                        Large Crossbody Bag (cv)
+                                    </span>
+                                </div>
+
+                                <div class="products__item__price">
+                                    <p>
+                                        <span class="strike">
+                                            Php 5,769.00
+                                        </span>
+                                        <br>
+                                        <span class="price">
+                                            NOW Php 69.00
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="products__item__col">
+                                <div class="products__item__image">
+                                    <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg" alt="">
+                                </div>
+
+                                <div class="products__item__detail">
+                                    <p>Kate spade new york</p>
+                                    <hr>
+                                    <span class="products__item__type">
+                                        Large Crossbody Bag (cv)
+                                    </span>
+                                </div>
+
+                                <div class="products__item__price">
+                                    <p>
+                                        <span class="strike">
+                                            Php 5,769.00
+                                        </span>
+                                        <br>
+                                        <span class="price">
+                                            NOW Php 69.00
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <div class="products__pagination">
+                            <ul>
+                                <li><a href="#" class="active-page">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="wrapper">
-                <div class="content__container content__container--1200 wrapper__container content__center">
-                    <div class="content__header">
-                        <h2>New This Week</h2>
-                    </div>
 
-                    <div class="content__three">
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/Evergage/orignal_160310_ZALORA_Unisex_homepage_322x300.jpg" alt="">
-
-                            <div class="content__column__title">
-                                <h4>Zalora</h4>
-                                <p>Discover Everything New</p>
-                            </div>
-                        </a>
-
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/Evergage/orignal_290316_MANGO_NA_segment_hp_322x300_unisex.jpg" alt="">
-
-                            <div class="content__column__title">
-                                <h4>New Arrivals</h4>
-                                <p>Shop the latest drops</p>
-                            </div>
-                        </a>
-
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/Evergage/030316_NIKE_men_NA_homepage_322x300.jpg" alt="">
-
-                            <div class="content__column__title">
-                                <h4>Nike</h4>
-                                <p>New Arrivals</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="content__container content__container--1200 wrapper__container content__center">
-                    <div class="content__header">
-                        <h2>New This Week</h2>
-                    </div>
-
-                    <div class="content__three">
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/DY/Promo_Deals_Bottom.jpg" alt="">
-                        </a>
-
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/DY/Desktop_square_bannerupdate.jpg" alt="">
-                        </a>
-
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/DY/DESKTOP_322X25NadienMaja.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
             <!-- footer -->
             <footer class="wrapper">
                 <div class="footer__container wrapper__container">
@@ -1126,7 +1249,7 @@
                         </div>
                     </div>
 
-                    <div class="footer__column">
+                    <!-- <div class="footer__column">
                         <h3>TOP SEARCHES</h3>
 
                         <div class="footer__3col">
@@ -1188,7 +1311,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </footer>
 
@@ -1207,10 +1330,10 @@
 
                         <ul>
                             <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                            <li><a href="#">Link 4</a></li>
-                            <li><a href="#">Link 5</a></li>
+                            <li><a href="">Link 2</a></li>
+                            <li><a href="">Link 3</a></li>
+                            <li><a href="">Link 4</a></li>
+                            <li><a href="">Link 5</a></li>
                         </ul>
                     </div>
 
@@ -1219,15 +1342,15 @@
 
                         <ul>
                             <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                            <li><a href="#">Link 4</a></li>
-                            <li><a href="#">Link 5</a></li>
+                            <li><a href="">Link 2</a></li>
+                            <li><a href="">Link 3</a></li>
+                            <li><a href="">Link 4</a></li>
+                            <li><a href="">Link 5</a></li>
                             <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                            <li><a href="#">Link 4</a></li>
-                            <li><a href="#">Link 5</a></li>
+                            <li><a href="">Link 2</a></li>
+                            <li><a href="">Link 3</a></li>
+                            <li><a href="">Link 4</a></li>
+                            <li><a href="">Link 5</a></li>
                         </ul>
                     </div>
 
@@ -1360,7 +1483,54 @@
 
 
 </body>
+
 <!-- Script Tags -->
+
+<script defer>
+    window.addEventListener('load', () => {
+        const filterShowToggle = document.querySelector('#filterShowToggle');
+        const filterShow = document.querySelector('#filterShow');
+        const productFilters = document.querySelectorAll('#filter')
+
+        filterShowToggle.addEventListener('click', ()=>{
+            if(filterShowToggle.classList.contains('show')) {
+
+                filterShow.style.display = 'none';
+
+                filterShowToggle.classList.remove('show');
+                filterShowToggle.textContent = 'Show';
+            } else {
+                filterShow.style.display = 'block';
+
+                filterShowToggle.classList.add('show');
+                filterShowToggle.textContent = 'Hide';
+            }
+        })
+        
+        productFilters.forEach(filters => {
+            const filterBtn = filters.querySelector('#filter-btn');
+            filterBtn.addEventListener('click', ()=> {
+                const filtersArrowIcon = filters.querySelector('.filter__title i');
+                const filterItems = filters.querySelector('#filter-items');
+                
+                if(filters.classList.contains('open')) {
+                    filters.classList.remove('open')
+                    filterItems.style.display = 'block';
+                } else {
+                    filters.classList.add('open')
+                    filterItems.style.display = 'none'
+                }
+                
+                
+                if(filtersArrowIcon.classList.contains('fa-sort-up')) {
+                    filtersArrowIcon.classList.replace('fa-sort-up', 'fa-sort-down')
+                } else {
+                    filtersArrowIcon.classList.replace('fa-sort-down', 'fa-sort-up')
+                }
+            })
+        })
+    })
+</script>
 <script src="app/dist/script/navbar.js" async></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="app/dist/script/app.js" defer></script>

@@ -4,7 +4,7 @@
 <head>
     <!-- Primary Meta Tags -->
     <meta charset="UTF-8">
-    <title> Influence | Home </title>
+    <title> web_title </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="web_title">
     <meta name="description" content="web_desc">
@@ -30,12 +30,20 @@
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+        integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
+        integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="app/build/style/main.min.css">
     <link rel="stylesheet" type="text/css" href="app/build/style/mobile-main.min.css"
         media="screen and (max-width: 789px)">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" defer
         crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <!-- Icons -->
     <!-- Scripts -->
 </head>
@@ -61,7 +69,7 @@
                 <div class="navbar__anchors">
                     <ul>
                         <!-- add class="navbar__anchors--active" if the page is active -->
-                        <li><a href="#">Women</a></li>
+                        <li><a class="navbar__anchors--active" href="#">Women</a></li>
                         <li><a href="#">Men</a></li>
                         <li><a href="#">Luxury</a></li>
                         <li><a href="#">Kids</a></li>
@@ -146,7 +154,7 @@
             </div>
 
             <!-- Submenu Category Desktop -->
-            <!-- <div class="submenu__container wrapper" id="submenu">
+            <div class="submenu__container wrapper" id="submenu">
                 <div class="submenu wrapper__container">
                     <ul>
                         <div class="submenu__anchors" id="submenu__anchors">
@@ -325,7 +333,7 @@
                         </div>
                     </ul>
                 </div>
-            </div> -->
+            </div>
 
             <div id="notif" class="notif notif--y">
                 <p>{{notificationMessage}}</p>
@@ -334,41 +342,6 @@
         </nav>
 
         <div id="marginTop"></div>
-
-        <!-- Bottom Menu Desktop -->
-        <div class="bottom__navbar wrapper__container">
-            <div class="bottom__container">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-shopping-bag"></i>
-                            <span>INow: unlimited free shipping</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-history"></i>
-                            <span>Days free return</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-truck"></i>
-                            <span>Free shipping available</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="covid">
-                            <i class="fas fa-hand-holding-heart"></i>
-                            <span>covid-19 donation</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
         <!-- Navbar Mobile -->
         <div v-show="isCategoryClicked" class="mobileAnchors__container">
@@ -885,181 +858,271 @@
             </div>
 
             <!-- Content -->
-            <header class="wrapper__container">
+            <header class="wrapper">
+                <div class="header__slider wrapper__container content__container--996">
+                    <div class="header__pages">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Kate Spade New York</a></li>
+                        </ul>
 
-                <div class="header__boxContainer">
-                    <div class="header__threecol">
-
-                        <div class="header__column mobile-view header__index">
-                            <a href="#" class="header__button header__button--left">Shop Women</a>
-                            <a href="#" class="header__button header__button--right">Shop Men</a>
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/MOBILE/Mobile_Unisex_Homepage_600x600.jpg"
-                                alt="">
-                        </div>
-
-                        <a href="#" class="header__column desktop-view">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/DESKTOP/Women_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column desktop-view">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/DESKTOP/Men_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column desktop-view">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/DESKTOP/Kids_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column mobile-view">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/MOBILE/Mobile_Kids_Homepage_370x320.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column">
-                            <img src="https://static-sg.zacdn.com/cms/DY/Oct20/CW42/HOMEPAGEREVAMP/Lifestyle_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/DESKTOP/Beauty_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/DESKTOP/Luxury_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column header__index mobile-view">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW41/GTL/APP_Skinny.jpg" alt="">
-                        </a>
+                        <p class="left"></p>
                     </div>
                 </div>
-
             </header>
 
-
             <div class="wrapper">
-                <div class="content__container content__container--1200 wrapper__container content__center">
-                    <div class="content__header">
-                        <h2>Featured Brand</h2>
-                    </div>
+                <div class="wrapper__container content__container--996">
+                    <!--  -->
+                    <div class="products__detail__container">
+                        <div class="products__detail__col">
 
-                    <div class="content__fbrands">
-                        <a href="#">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_avon_Logo.jpg" alt="">
-                        </a>
+                            <div class="products__detail__img">
+                                <a href="https://pbs.twimg.com/media/EakayddXgAAT73e.jpg" class="glightbox"  data-zoomable="true" id="anchorImage">
+                                    <img id="productActiveImage" src="https://pbs.twimg.com/media/EakayddXgAAT73e.jpg">
+                                </a>
+                            </div>
+                            
+                            <div class="products__detail__img__list">
+                                <div class="glide">
+                                    <div class="glide__track" data-glide-el="track">
+                                        <ul class="glide__slides">
+                                            <li class="glide__slide" id="productImage">
+                                                <img  src="https://pbs.twimg.com/media/EakayddXgAAT73e.jpg"
+                                                        alt="">
+                                            </li>
+                                            <li class="glide__slide" id="productImage">
+                                                <img
+                                                        src="https://i.pinimg.com/474x/1b/0e/56/1b0e56600b53e3411b9ba690a0458f4c.jpg"
+                                                        alt="">
+                                            </li>
+                                            <li class="glide__slide" id="productImage">
+                                                <img src="https://i.pinimg.com/236x/fe/3e/c3/fe3ec3460763d7f402b90c51d76edf10.jpg"
+                                                        alt="">
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="glide__arrows" data-glide-el="controls">
+                                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                                                class="fas fa-arrow-left"></i></button>
+                                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                                                class="fas fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                        <a href="#">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_belo_Logo.jpg" alt="">
-                        </a>
+                        <div class="products__detail__col">
+                            <div class="products__detail__info">
+                                <h3>Zalora active</h3>
+                                <h4>Track Jogger Pants</h4>
 
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_casio_Logo.jpg" alt="">
-                        </a>
+                                <p class="price">Php 1,099.00</p>
 
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_mango_Logo.jpg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_mendrez_Logo.jpg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_new_balance_Logo.jpg"
-                                alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_penshoppe_Logo.jpg"
-                                alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_regatta_Logo.jpg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_river-island_Logo.jpg"
-                                alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_sunnies_Logo.jpg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_superdry_Logo.jpg"
-                                alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_wallis_Logo.jpg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/DY/Homepage_137x83_ShapesAndCurves.jpg"
-                                alt="">
-                        </a>
-                        <a href="">
-                            <img src="https://zstaticph02-a.akamaihd.net/cms/Evergage/20160406_zalora_Logo.jpg" alt="">
-                        </a>
+                                <ul>
+                                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repudiandae modi at esse voluptatibus? Id veritatis perspiciatis ad cumque. Nostrum modi ducimus, quam necessitatibus accusantium iusto voluptatem. Sed, quae dolorum.</li>
+                                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, amet officia fugit ullam necessitatibus consequuntur modi enim numquam minus adipisci iste nobis atque id dolorum natus officiis sapiente culpa velit!</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur hic corrupti minus, accusamus nisi molestias, labore illo magnam, nemo tempore ratione aliquam nostrum qui doloribus debitis explicabo voluptas repellendus fugiat.</li>
+                                    <li>test 4</li>
+                                </ul>
+
+                                <div class="products__detail__options">
+                                    <div class="option__col">
+                                        <p>Sizes</p>
+
+                                        <select name="#" id="">
+                                            <option value="">Large</option>
+                                            <option value="">Small</option>
+                                            <option value="">Medium</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="option__col">
+                                        <p>30 days retyrn</p>
+
+                                        <span class="highlight">Free</span>
+                                    </div>
+
+                                    <div class="option__col">
+                                        <p>Cash on delivery</p>
+
+                                        <span class="highlight">
+                                            Yes
+                                        </span>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="option__col">
+                                        <p>Store name</p>
+
+                                        <a href="#">Visit Store</a>
+                                    </div>
+
+                                    <hr>
+
+
+                                    <h5>Delivery Estimate</h5>
+                                    <p><i>Greater NCR: 2-4 days, Major cities: 3-8 days, Provincial: 4-9 days. All in working days</i></p>
+                                </div>
+
+                                <div class="buttons">
+                                    <button class="button">Add to Bag</button>
+                                    <button class="button button--border">Add to wishlist</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="wrapper">
-                <div class="content__container content__container--1200 wrapper__container content__center">
+                <div class="wrapper__container content__container--996">
                     <div class="content__header">
-                        <h2>New This Week</h2>
+                        <h3>Similar Items</h3>
                     </div>
 
-                    <div class="content__three">
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/Evergage/orignal_160310_ZALORA_Unisex_homepage_322x300.jpg" alt="">
+                    <div class="glide-products">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <a href="#">
+                                        <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg"
+                                            alt="">
 
-                            <div class="content__column__title">
-                                <h4>Zalora</h4>
-                                <p>Discover Everything New</p>
-                            </div>
-                        </a>
+                                        <div class="glide__desc">
+                                            <h4>Guess</h4>
+                                            <p>Open Road Small Tote Bag</p>
+                                            <p>Php 4898.00</p>
+                                        </div>
+                                    </a>
+                                </li>
 
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/Evergage/orignal_290316_MANGO_NA_segment_hp_322x300_unisex.jpg" alt="">
+                                <li class="glide__slide">
+                                    <a href="#">
+                                        <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg"
+                                            alt="">
 
-                            <div class="content__column__title">
-                                <h4>New Arrivals</h4>
-                                <p>Shop the latest drops</p>
-                            </div>
-                        </a>
+                                        <div class="glide__desc">
+                                            <h4>Guess</h4>
+                                            <p>Open Road Small Tote Bag</p>
+                                            <p>Php 4898.00</p>
+                                        </div>
+                                    </a>
+                                </li>
 
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/Evergage/030316_NIKE_men_NA_homepage_322x300.jpg" alt="">
+                                <li class="glide__slide">
+                                    <a href="#">
+                                        <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg"
+                                            alt="">
 
-                            <div class="content__column__title">
-                                <h4>Nike</h4>
-                                <p>New Arrivals</p>
-                            </div>
-                        </a>
+                                        <div class="glide__desc">
+                                            <h4>Guess</h4>
+                                            <p>Open Road Small Tote Bag</p>
+                                            <p>Php 4898.00</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="glide__slide">
+                                    <a href="#">
+                                        <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg"
+                                            alt="">
+
+                                        <div class="glide__desc">
+                                            <h4>Guess</h4>
+                                            <p>Open Road Small Tote Bag</p>
+                                            <p>Php 4898.00</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                                    class="fas fa-arrow-left"></i></button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                                    class="fas fa-arrow-right"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="wrapper">
-                <div class="content__container content__container--1200 wrapper__container content__center">
+                <div class="wrapper__container content__container--996">
                     <div class="content__header">
-                        <h2>New This Week</h2>
+                        <h3>You may also like</h3>
                     </div>
 
-                    <div class="content__three">
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/DY/Promo_Deals_Bottom.jpg" alt="">
-                        </a>
+                    <div class="glide-products">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <a href="#">
+                                        <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg"
+                                            alt="">
 
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/DY/Desktop_square_bannerupdate.jpg" alt="">
-                        </a>
+                                        <div class="glide__desc">
+                                            <h4>Guess</h4>
+                                            <p>Open Road Small Tote Bag</p>
+                                            <p>Php 4898.00</p>
+                                        </div>
+                                    </a>
+                                </li>
 
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/DY/DESKTOP_322X25NadienMaja.jpg" alt="">
-                        </a>
+                                <li class="glide__slide">
+                                    <a href="#">
+                                        <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg"
+                                            alt="">
+
+                                        <div class="glide__desc">
+                                            <h4>Guess</h4>
+                                            <p>Open Road Small Tote Bag</p>
+                                            <p>Php 4898.00</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="glide__slide">
+                                    <a href="#">
+                                        <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg"
+                                            alt="">
+
+                                        <div class="glide__desc">
+                                            <h4>Guess</h4>
+                                            <p>Open Road Small Tote Bag</p>
+                                            <p>Php 4898.00</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="glide__slide">
+                                    <a href="#">
+                                        <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg"
+                                            alt="">
+
+                                        <div class="glide__desc">
+                                            <h4>Guess</h4>
+                                            <p>Open Road Small Tote Bag</p>
+                                            <p>Php 4898.00</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                                    class="fas fa-arrow-left"></i></button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                                    class="fas fa-arrow-right"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <!-- footer -->
             <footer class="wrapper">
                 <div class="footer__container wrapper__container">
@@ -1126,7 +1189,7 @@
                         </div>
                     </div>
 
-                    <div class="footer__column">
+                    <!-- <div class="footer__column">
                         <h3>TOP SEARCHES</h3>
 
                         <div class="footer__3col">
@@ -1188,7 +1251,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </footer>
 
@@ -1207,10 +1270,10 @@
 
                         <ul>
                             <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                            <li><a href="#">Link 4</a></li>
-                            <li><a href="#">Link 5</a></li>
+                            <li><a href="">Link 2</a></li>
+                            <li><a href="">Link 3</a></li>
+                            <li><a href="">Link 4</a></li>
+                            <li><a href="">Link 5</a></li>
                         </ul>
                     </div>
 
@@ -1219,15 +1282,15 @@
 
                         <ul>
                             <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                            <li><a href="#">Link 4</a></li>
-                            <li><a href="#">Link 5</a></li>
+                            <li><a href="">Link 2</a></li>
+                            <li><a href="">Link 3</a></li>
+                            <li><a href="">Link 4</a></li>
+                            <li><a href="">Link 5</a></li>
                             <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                            <li><a href="#">Link 4</a></li>
-                            <li><a href="#">Link 5</a></li>
+                            <li><a href="">Link 2</a></li>
+                            <li><a href="">Link 3</a></li>
+                            <li><a href="">Link 4</a></li>
+                            <li><a href="">Link 5</a></li>
                         </ul>
                     </div>
 
@@ -1358,10 +1421,59 @@
         </div>
     </main>
 
-
 </body>
+
 <!-- Script Tags -->
 <script src="app/dist/script/navbar.js" async></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="app/dist/script/app.js" defer></script>
+<script src="https://unpkg.com/@glidejs/glide"></script>
+<script>
+    window.addEventListener('load', () => {
+        const lightbox = GLightbox({});
+        const sliders = document.querySelector('.glide');
+        const options = {
+            type: 'slider',
+            startAt: 0,
+            perView: 5,
+        };
+
+        new Glide(sliders, options).mount();
+
+        const productList = document.querySelectorAll('.glide-products');
+        
+        productList.forEach(product => {
+            new Glide(product, {
+            type: 'carousel',
+            perView: 4,
+            gap: 10,
+            breakpoints: {
+                500: {
+                    perView: 2
+                },
+                789: {
+                    perView: 3
+                }
+            }
+        }).mount()
+        })
+        
+        const productActiveImage = document.querySelector('#productActiveImage');       
+        const anchorImage = document.querySelector('#anchorImage')
+        const productImage = document.querySelectorAll('#productImage');
+
+        productImage.forEach(image => {
+            
+            image.addEventListener('click', ()=>{
+                productActiveImage.setAttribute('src', image.querySelector('img').src)
+                const myGallery = GLightbox({
+    elements: [{
+        'href': 'nice'
+    }
+    ]
+});
+            })
+        });
+    });
+</script>
 </html>

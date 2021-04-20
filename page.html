@@ -4,7 +4,7 @@
 <head>
     <!-- Primary Meta Tags -->
     <meta charset="UTF-8">
-    <title> Influence | Home </title>
+    <title> web_title </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="web_title">
     <meta name="description" content="web_desc">
@@ -30,6 +30,12 @@
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+        integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
+        integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="app/build/style/main.min.css">
     <link rel="stylesheet" type="text/css" href="app/build/style/mobile-main.min.css"
         media="screen and (max-width: 789px)">
@@ -61,7 +67,7 @@
                 <div class="navbar__anchors">
                     <ul>
                         <!-- add class="navbar__anchors--active" if the page is active -->
-                        <li><a href="#">Women</a></li>
+                        <li><a class="navbar__anchors--active" href="#">Women</a></li>
                         <li><a href="#">Men</a></li>
                         <li><a href="#">Luxury</a></li>
                         <li><a href="#">Kids</a></li>
@@ -146,7 +152,7 @@
             </div>
 
             <!-- Submenu Category Desktop -->
-            <!-- <div class="submenu__container wrapper" id="submenu">
+            <div class="submenu__container wrapper" id="submenu">
                 <div class="submenu wrapper__container">
                     <ul>
                         <div class="submenu__anchors" id="submenu__anchors">
@@ -325,7 +331,7 @@
                         </div>
                     </ul>
                 </div>
-            </div> -->
+            </div>
 
             <div id="notif" class="notif notif--y">
                 <p>{{notificationMessage}}</p>
@@ -885,61 +891,204 @@
             </div>
 
             <!-- Content -->
-            <header class="wrapper__container">
-
-                <div class="header__boxContainer">
-                    <div class="header__threecol">
-
-                        <div class="header__column mobile-view header__index">
-                            <a href="#" class="header__button header__button--left">Shop Women</a>
-                            <a href="#" class="header__button header__button--right">Shop Men</a>
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/MOBILE/Mobile_Unisex_Homepage_600x600.jpg"
-                                alt="">
+            <header class="wrapper">
+                <div class="header__slider header__slider--500 wrapper__container content__container--996">
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <a href="#"><img
+                                            src="https://static-ph.zacdn.com/cms/RR/FORMATION25DESKTOP_hero.jpg"
+                                            alt=""></a>
+                                </li>
+                                <li class="glide__slide">
+                                    <a href="#"><img
+                                            src="https://static-ph.zacdn.com/cms/RR/HMMORE30WOMENDESKTOP_hero3_w.jpg"
+                                            alt=""></a>
+                                </li>
+                            </ul>
                         </div>
 
-                        <a href="#" class="header__column desktop-view">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/DESKTOP/Women_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
+                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                            <button class="glide__bullet" data-glide-dir="=0"></button>
+                            <button class="glide__bullet" data-glide-dir="=1"></button>
+                            <!-- Increment data-glide-dir="=Number" -->
+                            <!-- <button class="glide__bullet" data-glide-dir="=2"></button> -->
+                        </div>
 
-                        <a href="#" class="header__column desktop-view">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/DESKTOP/Men_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column desktop-view">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/DESKTOP/Kids_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column mobile-view">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/MOBILE/Mobile_Kids_Homepage_370x320.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column">
-                            <img src="https://static-sg.zacdn.com/cms/DY/Oct20/CW42/HOMEPAGEREVAMP/Lifestyle_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/DESKTOP/Beauty_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW34/HOMEPAGEREVAMP/DESKTOP/Luxury_Homepage_370x430.jpg"
-                                alt="">
-                        </a>
-
-                        <a href="#" class="header__column header__index mobile-view">
-                            <img src="https://static-sg.zacdn.com/cms/dy/2020/CW41/GTL/APP_Skinny.jpg" alt="">
-                        </a>
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                                    class="fas fa-arrow-left"></i></button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                                    class="fas fa-arrow-right"></i></button>
+                        </div>
                     </div>
                 </div>
 
+                <div class="header__slider header__slider--150 wrapper__container content__container--996">
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <a href="#"><img
+                                            src="https://static-ph.zacdn.com/cms/RR/DELUXETILLAPRIL12DESKTOP_Fat_Skinny_996x150.jpg"
+                                            alt=""></a>
+                                </li>
+                                <li class="glide__slide">
+                                    <a href="#"><img
+                                            src="https://static-ph.zacdn.com/cms/RR/30DANCEWOMNDESKTOP_Fat_Skinny_996x150.jpg"
+                                            alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                            <button class="glide__bullet" data-glide-dir="=0"></button>
+                            <button class="glide__bullet" data-glide-dir="=1"></button>
+                            <!-- Increment data-glide-dir="=Number" -->
+                            <!-- <button class="glide__bullet" data-glide-dir="=2"></button> -->
+                        </div>
+
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                                    class="fas fa-arrow-left"></i></button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                                    class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
             </header>
 
+            <div class="wrapper">
+                <div class="wrapper__container content__container--996">
+                    <div class="content__header">
+                        <h2>Just Arrived</h2>
+                    </div>
+
+                    <div class="content__sb">
+                        <a href="#" class="content__column">
+                            <img src="https://static-ph.zacdn.com/cms/RR/CLNNEWARRIVALSDESKTOP_N1_1.jpg" alt="">
+
+                            <div class="content__bs__desc content__bs__desc--max">
+                                <h4>CLN</h4>
+                                <p>NEW ARRIVALS | As low as P799</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="content__column">
+                            <img src="https://static-ph.zacdn.com/cms/RR/SUMMERSPORTSWEARDESKTOP_N2_2.jpg" alt="">
+
+                            <div class="content__bs__desc content__bs__desc--right">
+                                <h4>STEP INTO SUMMER</h4>
+                                <p>Sandals that bring you comfort throughout the summer heat</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="wrapper__container content__container--996">
+                    <div class="content__header">
+                        <h2>Just For You</h2>
+                        <p>Handpicked pieces for your personal style</p>
+                    </div>
+
+                    <div class="glide-products">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <a href="#">
+                                        <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg"
+                                            alt="">
+
+                                        <div class="glide__desc">
+                                            <h4>Guess</h4>
+                                            <p>Open Road Small Tote Bag</p>
+                                            <p>Php 4898.00</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="glide__slide">
+                                    <a href="#">
+                                        <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg"
+                                            alt="">
+
+                                        <div class="glide__desc">
+                                            <h4>Guess</h4>
+                                            <p>Open Road Small Tote Bag</p>
+                                            <p>Php 4898.00</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="glide__slide">
+                                    <a href="#">
+                                        <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg"
+                                            alt="">
+
+                                        <div class="glide__desc">
+                                            <h4>Guess</h4>
+                                            <p>Open Road Small Tote Bag</p>
+                                            <p>Php 4898.00</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="glide__slide">
+                                    <a href="#">
+                                        <img src="https://dynamic.zacdn.com/Vq0W815Zipb-0Ul6uyGEqSaMUMs=/fit-in/762x1100/filters:quality(95):fill(ffffff)/http://static.ph.zalora.net/p/coach-6652-4271491-1.jpg"
+                                            alt="">
+
+                                        <div class="glide__desc">
+                                            <h4>Guess</h4>
+                                            <p>Open Road Small Tote Bag</p>
+                                            <p>Php 4898.00</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                                    class="fas fa-arrow-left"></i></button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                                    class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="wrapper__container content__container--996">
+                    <div class="content__header">
+                        <h2>Trending Now</h2>
+                    </div>
+
+                    <div class="content__bs">
+                        <a href="#" class="content__column">
+                            <img src="https://static-ph.zacdn.com/cms/RR/WORKOUTATHOMDESKTOP_N2_620x420_(1).jpg" alt="">
+
+                            <div class="content__bs__desc content__bs__desc--left">
+                                <h4>CLN</h4>
+                                <p>NEW ARRIVALS | As low as P799</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="content__column">
+                            <img src="https://static-ph.zacdn.com/cms/RR/SKINPROTECTIONDESKTOP_N1_360x420_(1).jpg"
+                                alt="">
+
+                            <div class="content__bs__desc content__bs__desc--max">
+                                <h4>SKIN PROTECTION</h4>
+                                <p>Say goodbye to sun-damage with these sun protective must-haves</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
             <div class="wrapper">
                 <div class="content__container content__container--1200 wrapper__container content__center">
@@ -1002,64 +1151,6 @@
                 </div>
             </div>
 
-            <div class="wrapper">
-                <div class="content__container content__container--1200 wrapper__container content__center">
-                    <div class="content__header">
-                        <h2>New This Week</h2>
-                    </div>
-
-                    <div class="content__three">
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/Evergage/orignal_160310_ZALORA_Unisex_homepage_322x300.jpg" alt="">
-
-                            <div class="content__column__title">
-                                <h4>Zalora</h4>
-                                <p>Discover Everything New</p>
-                            </div>
-                        </a>
-
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/Evergage/orignal_290316_MANGO_NA_segment_hp_322x300_unisex.jpg" alt="">
-
-                            <div class="content__column__title">
-                                <h4>New Arrivals</h4>
-                                <p>Shop the latest drops</p>
-                            </div>
-                        </a>
-
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/Evergage/030316_NIKE_men_NA_homepage_322x300.jpg" alt="">
-
-                            <div class="content__column__title">
-                                <h4>Nike</h4>
-                                <p>New Arrivals</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="content__container content__container--1200 wrapper__container content__center">
-                    <div class="content__header">
-                        <h2>New This Week</h2>
-                    </div>
-
-                    <div class="content__three">
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/DY/Promo_Deals_Bottom.jpg" alt="">
-                        </a>
-
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/DY/Desktop_square_bannerupdate.jpg" alt="">
-                        </a>
-
-                        <a href="#" class="content__column">
-                            <img src="https://static-ph.zacdn.com/cms/DY/DESKTOP_322X25NadienMaja.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
             <!-- footer -->
             <footer class="wrapper">
                 <div class="footer__container wrapper__container">
@@ -1207,10 +1298,10 @@
 
                         <ul>
                             <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                            <li><a href="#">Link 4</a></li>
-                            <li><a href="#">Link 5</a></li>
+                            <li><a href="">Link 2</a></li>
+                            <li><a href="">Link 3</a></li>
+                            <li><a href="">Link 4</a></li>
+                            <li><a href="">Link 5</a></li>
                         </ul>
                     </div>
 
@@ -1219,15 +1310,15 @@
 
                         <ul>
                             <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                            <li><a href="#">Link 4</a></li>
-                            <li><a href="#">Link 5</a></li>
+                            <li><a href="">Link 2</a></li>
+                            <li><a href="">Link 3</a></li>
+                            <li><a href="">Link 4</a></li>
+                            <li><a href="">Link 5</a></li>
                             <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                            <li><a href="#">Link 4</a></li>
-                            <li><a href="#">Link 5</a></li>
+                            <li><a href="">Link 2</a></li>
+                            <li><a href="">Link 3</a></li>
+                            <li><a href="">Link 4</a></li>
+                            <li><a href="">Link 5</a></li>
                         </ul>
                     </div>
 
@@ -1364,4 +1455,35 @@
 <script src="app/dist/script/navbar.js" async></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="app/dist/script/app.js" defer></script>
+<script src="https://unpkg.com/@glidejs/glide"></script>
+<script>
+    window.addEventListener('load', () => {
+        const sliders = document.querySelectorAll('.glide');
+        const options = {
+            type: 'slider',
+            startAt: 0,
+            perView: 1,
+            autoplay: 3000
+        };
+
+        sliders.forEach(slide => {
+            new Glide(slide, options).mount()
+        })
+
+        new Glide('.glide-products', {
+            type: 'carousel',
+            perView: 4,
+            gap: 10,
+            breakpoints: {
+                500: {
+                    perView: 2
+                },
+                789: {
+                    perView: 3
+                }
+            }
+        }).mount()
+    });
+</script>
+
 </html>

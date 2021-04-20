@@ -1,32 +1,21 @@
 Vue.component('counter', {
-    template: `<div class="quantityCounter"><button @click='add();notifUpdate();'>+</button><span>{{ result }}</span><button @click='sub();notifUpdate();'>-</button></div>`,
+    template: `<div class="quantityCounter"><button @click="add();notifUp()">+</button><span>{{ result }}</span><button @click="sub();notifUp()">-</button></div>`,
     data() {
         return {
             result: 1
         }
     },
-    props: ['value'],
     methods: {
-        emitResult() {
-            this.$emit('input', this.result)
-        },
         add() {
             this.result += 1
-            this.emitResult()
         },
         sub() {
             if (this.result > 1) {
                 this.result -= 1
             }
-            this.emitResult()
         },
-        notifUpdate() {
-            const notif = document.querySelector('#notif');
-                notif.classList.add('notif--open')
-
-            setTimeout(() => {
-                notif.classList.remove('notif--open')
-            }, 3000);
+        notifUp: function () {
+            App.notifUpdate('Cart Updated')
         }
     }
 })
@@ -41,7 +30,8 @@ var App = new Vue({
         isWishlistClicked: false,
         isBagClicked: false,
         isUserSettingsClicked: false,
-        quantity: 1
+        quantity: 1,
+        notificationMessage: ''
     },
     methods: {
         navbarAnchorView: function (dataName) {
@@ -69,22 +59,25 @@ var App = new Vue({
                 }
 
                 this.quantity = 1;
+                this.notificationMessage = '';
+                notif.classList.remove('notif--open')
             })
         },
         preventMobileNavClicked: function () {
             preventNavbar();
         },
-        notifUpdate: function () {
-            const notif = document.querySelector('#notif');
-                notif.classList.add('notif--open')
-
+        notifUpdate: function (notifMessage) {
+            
+            notif.classList.add('notif--open');
+            this.notificationMessage = notifMessage;
             setTimeout(() => {
                 notif.classList.remove('notif--open')
+                this.notificationMessage = ''
             }, 3000);
         }
     }
 });
-
+const notif = document.querySelector('#notif');
 // Anchor Mobile
 const anchors = Array.from(document.querySelectorAll('#navbarAnchorsCategory > li'));
 

@@ -612,7 +612,7 @@ nav {
     &__navbar {
         padding: 10px 0;
         width: 100%;
-        background-color: #FFF !important;
+        background-color: transparent !important;
         display: none !important;
 
         @include device(tablet) {

@@ -1,0 +1,137 @@
+header {
+    padding: 50px 0 20px 0;
+}
+
+.header {
+    &__boxContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__slider {
+        margin: 10px 0;
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        @include device(tablet) {
+            max-width: 996px;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &--500 {
+            height: auto;
+
+            @include device(tablet) {
+                height: 450px !important;
+            }
+
+            @include device(laptop) {
+                height: 500px !important;
+            }
+        }
+
+        &--150 {
+            height: auto
+        }
+    }
+
+    &__threecol {
+        gap: 20px;
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+        padding: 6px 2%;
+
+        @include device(laptop) {
+            padding: 6px 0;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+
+            @include device(laptop) {
+                width: 310px !important;
+            }
+        }
+    }
+
+    &__column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__pages {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 14px;
+        padding: 0 2%;
+
+        @include device(tablet) {
+            padding: 0;
+        }
+
+        &--result {
+            padding: 10px 2%;
+
+            @include device(tablet) {
+                padding: 10px 0;
+            }
+        }
+
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        ul {
+            li {
+                display: inline-block;
+
+                &:not(:last-child)::after {
+                    content: '>';
+                    color: #999;
+                    margin: 0 5px;
+                }
+
+                a,
+                p {
+                    color: #333;
+                }
+
+            }
+        }
+
+        .left {
+            display: flex;
+            place-items: center;
+            letter-spacing: 1px;
+            font-size: 14px;
+            margin-left: auto;
+
+            p {
+                font-size: inherit
+            }
+
+            select {
+                padding: 4px;
+                font-size: 12px;
+                margin-left: 5px;
+                border: 1px solid #999;
+            }
+        }
+    }
+}

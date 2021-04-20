@@ -28,7 +28,6 @@ p {
     font-size: 17px;
 }
 
-
 .menuBottom {
     display: none;
 }
@@ -38,9 +37,13 @@ p {
 }
 
 .mobile-view {
-    display: none;
+    display: none !important;
 }
 
 .notif {
     display: none;
+}
+
+.desktop-view {
+    display: block !important;
 }
