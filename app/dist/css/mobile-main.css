@@ -13,7 +13,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -91,7 +91,7 @@ p {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 1px;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
