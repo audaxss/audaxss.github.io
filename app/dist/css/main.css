@@ -2796,6 +2796,81 @@ label {
   color: #FFED85;
 }
 
+.sort__button {
+  color: #000;
+  text-decoration: none !important;
+  margin-left: 5px;
+  padding: 7px;
+  font-size: 12px;
+  border: 1px solid #000;
+}
+
+.sort__button:hover:not(.sort__button--active) {
+  color: #FFF;
+  background-color: #5c5c5c;
+  border-color: #5c5c5c;
+}
+
+.sort__button--active {
+  background-color: #000;
+  color: #FFF;
+}
+
+.shop__name {
+  margin-top: 20px;
+}
+
+.shop__search {
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 790px) {
+  .shop__search {
+    padding: 10px;
+  }
+}
+
+.shop__information {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #FFF;
+  width: 100%;
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.shop__information img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 20px;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  background-color: black;
+}
+
+.shop__information p {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: .5px;
+  color: #000;
+  margin: 5px 0;
+}
+
+.shop__information .follow {
+  color: #7e7e7e;
+}
+
+.shop__information .follow b {
+  color: #000;
+}
+
 footer {
   width: 100%;
   display: block;

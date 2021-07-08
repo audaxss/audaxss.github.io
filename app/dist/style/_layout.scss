@@ -1609,3 +1609,74 @@ label {
 .rating>input:checked~label:hover~label {
     color: #FFED85;
 }
+
+.sort__button {
+    color: #000;
+    text-decoration: none !important;
+    margin-left: 5px;
+    padding: 7px;
+    font-size: 12px;
+    border: 1px solid #000;
+
+    &:hover:not(&--active) {
+        color: #FFF;
+        background-color: rgb(92, 92, 92);
+        border-color: rgb(92, 92, 92);
+    }
+
+    &--active {
+        background-color: #000;
+        color: #FFF;
+    }
+}
+
+.shop {
+    &__name {
+        margin-top: 20px;
+    }
+
+    &__search {
+        padding-left: 20px;
+
+        @include device(tablet) {
+            padding: 10px;
+        }
+    }
+
+    &__information {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #FFF;
+        width: 100%;
+        height: 170px;
+        display: flex;
+        flex-direction: row;
+
+        img {
+            object-fit: cover;
+            margin-right: 20px;
+            width: 90px;
+            height: 90px;
+            border-radius: 100%;
+            background-color: black;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: .5px;
+            color: #000;
+            margin: 5px 0;
+
+        }
+
+
+        .follow {
+            color: #7e7e7e;
+
+            b {
+                color: #000;
+            }
+        }
+    }
+}
